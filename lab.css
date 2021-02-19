@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+li{list-style-type:none;}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    background: #f6f6f6;
+}
+
+/* ....................header section..........  */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    height: 6vw;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.title{
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+.title span{
+    font-weight: 500;
+}
+
+.ul{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ul a{
+    font-size: 1.3rem;
+    position: relative;
+}
+.ul a::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    transition: all .2s ease-in-out 0s;
+    visibility: hidden;
+    transform: scaleX(0);
+    
+}
+.ul a:hover:after{
+    visibility: visible;
+    transform: scaleX(1);
+}
+.ul a:focus::after{
+    visibility: visible;
+    transform: scaleX(1);
+}
+.about_link::after{
+    visibility: visible !important;
+    transform: scaleX(1) !important;
+}
+
+/* ================== MAIN SECTION ===================  */
+
+.main{
+    margin-top: 8rem;
+    margin: 8rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 20%));
+    grid-column: auto;
+    grid-gap: 20px;
+    width: 95%;
+    height: auto;
+    justify-content: center;
+}
+
+
+.box{
+    max-width: 100%;
+    min-height: 180px;
+    border: 1px solid red;
+}
+
+/* ================== MAIN SECTION ===================  */
+
+
+/* ................FOOTER   section..........  */
+.footer{
+    height: 35px;
+    width: 100%;
+    position: absolute;
+    top: calc(100% - 35px);
+    padding:1rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    font-size: .8rem;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* ................FOOTER   section..........  */
+
+/* ................MEDIA QUERIES  section..........  */
+
+@media only screen and (max-width: 780px){
+    .about{
+        margin-left: 2rem;
+    }
+    .header{
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ul, .title{
+        margin-top: 1rem;
+    }
+    .title{
+        margin-left: 1rem;
+    }
+    .ul{
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+    }
+    .ul li{
+           padding: 0 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 1400px){
+
+ .main{
+    grid-template-columns: repeat(auto-fit, minmax(180px, 16.66%));
+ }
+}
+@media only screen and (max-width: 1024px){
+    .main{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 20%));
+     }
+}
+
+@media only screen and (max-width: 950px){
+    .main{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 20%));
+     }
+}
+
+@media only screen and (max-width: 800px){
+    .main{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 25%));
+     }
+}
+
+@media only screen and (max-width: 600px){
+    .main{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 33%));
+     }
+}
+
+
+/* ................MEDIA QUERIES  section..........  */
