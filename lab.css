@@ -80,22 +80,24 @@ body{
 /* ================== MAIN SECTION ===================  */
 
 .main{
-    margin-top: 8rem;
     margin: 8rem auto 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 20%));
-    grid-column: auto;
+    grid-template-columns: repeat(auto-fit, minmax(15vmin, 30vmin));
     grid-gap: 20px;
     width: 95%;
     height: auto;
     justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 
 .box{
-    max-width: 100%;
-    min-height: 180px;
-    border: 1px solid red;
+    width: 20vmin;
+    height: 20vmin;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid blue;
 }
 
 /* ================== MAIN SECTION ===================  */
@@ -153,36 +155,73 @@ body{
     }
 }
 
+@media only screen and (max-width: 2000px){
+    .main{
+        grid-template-columns: repeat(auto-fit, minmax(vmin, 18%));
+     }
+     .box{
+        min-width: 180px;
+        min-height: 180px;
+        max-width: 28vmin;
+        max-height: 28vmin;
+     }
+
+}
+
 
 @media only screen and (max-width: 1400px){
 
  .main{
-    grid-template-columns: repeat(auto-fit, minmax(180px, 16.66%));
+    grid-template-columns: repeat(auto-fit, minmax(15vmin, 18%));
+ }
+ .box{
+    min-width: 180px;
+    min-height: 180px;
+    max-width: 28vmin;
+    max-height: 28vmin;
  }
 }
+
 @media only screen and (max-width: 1024px){
     .main{
-        grid-template-columns: repeat(auto-fit, minmax(180px, 20%));
+        grid-template-columns: repeat(auto-fit, minmax(15vmin, 20%));
      }
+     .box{
+        min-width: 15vmin;
+        min-height: 15vmin;
+        max-width: 35vmin;
+        max-height: 35vmin;
+     }
+
 }
 
 @media only screen and (max-width: 950px){
     .main{
-        grid-template-columns: repeat(auto-fit, minmax(180px, 20%));
+        grid-template-columns: repeat(auto-fit, minmax(15vmin, 20%));
      }
 }
 
 @media only screen and (max-width: 800px){
     .main{
-        grid-template-columns: repeat(auto-fit, minmax(180px, 25%));
+        grid-template-columns: repeat(auto-fit, minmax(15vmin, 25%));
+     }
+     .box{
+        min-width: 25vmin;
+        min-height: 25vmin;
+        max-width: 30vmin;
+        max-height: 30vmin;
      }
 }
 
 @media only screen and (max-width: 600px){
     .main{
-        grid-template-columns: repeat(auto-fit, minmax(180px, 33%));
+        grid-template-columns: repeat(auto-fit, minmax(15vmin, 33%));
+        margin-top: 10rem;
+     }
+     .box{
+        width: 30vmin;
+        height: 30vmin;
      }
 }
-
 
 /* ................MEDIA QUERIES  section..........  */
