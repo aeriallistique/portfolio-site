@@ -13,6 +13,7 @@ li{list-style-type:none;}
 body{
     font-family: 'Roboto Slab', serif;
     background: #f6f6f6;
+    position: relative;
 }
 
 /* ....................header section..........  */
@@ -79,12 +80,15 @@ body{
 
 /* ..........Main   section..........  */
 .main{
-    margin-top: .1rem;
-    padding: 140px 2rem 0 2rem;
+    position: absolute;
+    top: 6vw;
+    left: 0;
+    right: 0;
+    padding: 2rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto
+    height: auto;
 }
 .about{
     width: 40%;
@@ -125,21 +129,34 @@ body{
     font-family: 'Roboto', sans-serif;
 
 }
+.title-anchor{
+    text-transform: lowercase;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(14, 14, 133);
+
+}
+.title-anchor:hover{
+    display: inline-block;
+    text-decoration: underline;
+}
 
 /* ................FOOTER   section..........  */
 .footer{
+    position: absolute;
+    top: 100vh;
     height: auto;
     width: 100%;
     padding:.4rem 0;
     background-color: white;
+    
 }
 .footer p{
+    text-align: left;
     font-size: .8rem;
     color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -28vw;
 }
 
 /* ................FOOTER   section..........  */
@@ -218,4 +235,11 @@ body{
     
 }
 
+.mailto{
+    text-transform: lowercase;
+    color: rgb(18, 18, 124);
+    font-weight: 700;
+    text-decoration: underline;
+
+}
 /* ................Utility classes..........  */
