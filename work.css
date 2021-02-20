@@ -14,7 +14,7 @@ i{pointer-events: none;}
 body{
     font-family: 'Roboto Slab', serif;
     background: #f6f6f6;
-    overflow: hidden;
+    
     height: 100vh;
     width: 100vw;
 }
@@ -86,9 +86,7 @@ body{
     width: 100vw;
     height: calc(100vh - 11vh);
     position: absolute;
-    top: 11vh;
-    
-    
+    top: 11vh;    
 }
 .main1{
     position: absolute;
