@@ -14,7 +14,7 @@ body{
     font-family: 'Roboto Slab', serif;
     background: #f6f6f6;
     position: relative;
-    height: 130vh;
+    height: 100vh;
 }
 
 /* ....................header section..........  */
@@ -94,7 +94,7 @@ body{
 .about{
     width: 40%;
     height: 100%;
-    margin: 0 5rem 0 1vw;
+    margin: 0 auto;
 }
 .about h3{
     font-size: 2rem;
@@ -104,7 +104,7 @@ body{
 .about p{
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
-    width: 70%;
+    width: 100%;
     line-height: 1.8rem;
 
 }
@@ -115,21 +115,7 @@ body{
     margin-bottom: 6rem;
 }
 
-.where_i_share{
-    margin-top: .4rem;
-    width: 300px;
-    align-self: flex-start;
-}
-.where_i_share h4{
-    margin-bottom: 10px;
-    font-size: 1.3rem;
-    font-weight: 400;
-}
-.where_i_share p{
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
 
-}
 .title-anchor{
     text-transform: lowercase;
     font-family: 'Roboto Slab', serif;
@@ -173,6 +159,10 @@ body{
 }
 
 @media only screen and (max-width: 950px){
+    body{
+        height: 90vh;
+    }
+    
     .main{
         flex-direction: column;
     }
@@ -191,12 +181,13 @@ body{
 }
 
 @media only screen and (max-width: 780px){
+    body{
+        height: 100vh;
+    }
     .main{
         margin-top: 9vmax;
     }
-    .about{
-        margin-left: 2rem;
-    }
+    
     .header{
         height: auto;
         flex-direction: column;
@@ -222,51 +213,29 @@ body{
 
 @media only screen and (max-width: 500px){
     body{
-        height: 170vh;
+        height: 130vh;
     }
     .main{
         margin-top: 10vmax;
     }
 }
-@media only screen and (max-width: 500px){
-    .main{
-        margin-top: 10vmax;
-    }
-}
+
 @media only screen and (max-width: 375px){
     body{
-        height: 190vh;
+        height: 150vh;
     }
     
     .main{
         margin-top: 11vmax;
     }
-}
+    .about{
+        text-align: center;
+    }
 
 /* ................MEDIA QUERIES  section..........  */
 
 
 /* ................CONTACT PAGE SPECIFIC CSS RULES  section..........  */
 
-.get_in_touch {
-    margin-bottom: 0!important;
-}
-.hidden{
-    transform: translateY(5rem);
-    opacity: 0;
-}
-.pop_up{
-    transform: translateY(0);
-    opacity: 1;
-    transition: transform .8s ease-in-out, opacity 1.5s ease-in;
-    
-}
 
-.mailto{
-    text-transform: lowercase;
-    color: rgb(18, 18, 124);
-    font-weight: 700;
-    text-decoration: underline;
-
-}
 /* ................Utility classes..........  */
