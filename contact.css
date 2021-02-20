@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+li{list-style-type:none;}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    background: #f6f6f6;
+    position: relative;
+    height: 100vh;
+}
+
+/* ....................header section..........  */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    height: 6vw;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.title{
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+.title span{
+    font-weight: 500;
+}
+
+.ul{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ul a{
+    font-size: 1.3rem;
+    position: relative;
+}
+.ul a::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    transition: all .2s ease-in-out 0s;
+    visibility: hidden;
+    transform: scaleX(0);
+    
+}
+.ul a:hover:after{
+    visibility: visible;
+    transform: scaleX(1);
+}
+.ul a:focus::after{
+    visibility: visible;
+    transform: scaleX(1);
+}
+.about_link::after{
+    visibility: visible !important;
+    transform: scaleX(1) !important;
+}
+
+/* ============ Main section ============= */
+.main{
+    position: absolute;
+    top: 6vw;
+    left: 0;
+    right: 0;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.about{
+    width: 70%;
+    height: 100%;
+    margin: 0 5rem 0 1vw;
+}
+.about h3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.about p{
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 70%;
+    line-height: 1.8rem;
+
+}
+.about p:first-of-type{
+    margin-top: 2rem;
+}
+.about p:last-of-type{
+    margin-bottom: 6rem;
+}
+
+
+.get_in_touch {
+    margin-bottom: 0!important;
+}
+.hidden{
+    transform: translateY(5rem);
+    opacity: 0;
+}
+.pop_up{
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform .8s ease-in-out, opacity 1.5s ease-in;
+    
+}
+
+.mailto{
+    text-transform: lowercase;
+    color: rgb(18, 18, 124);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* ................FOOTER   section..........  */
+.footer{
+    position: absolute;
+    top: 100%;
+    height: auto;
+    width: 100%;
+    padding:.4rem 2rem;
+    background-color: white;
+    display: inline-block;
+}
+.footer p{
+    text-align: left;
+    font-size: .8rem;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ................FOOTER   section..........  */
+
+/* =============MEDIA QUERIES ================ */
+@media only screen and (max-width: 780px){
+    .main{
+        margin-top: 9vmax;
+    }
+    .about{
+        margin-left: 2rem;
+    }
+    .header{
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ul, .title{
+        margin-top: 1rem;
+    }
+    .title{
+        margin-left: 1rem;
+    }
+    .ul{
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+    }
+    .ul li{
+           padding: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 375px){
+   .main{
+       margin-top: 6rem;
+   }
+   
+    footer{
+       margin-top: 3rem;
+   }
+}
