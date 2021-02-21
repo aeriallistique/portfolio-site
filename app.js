@@ -400,6 +400,7 @@ function handleDrawing (){
         painting = true;
         draw(e)
     }
+    
     function endPos (){
         painting = false;
        ctx.beginPath()
