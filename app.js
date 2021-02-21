@@ -391,9 +391,35 @@ function handleDrawing (){
 
     canvas.height = drawing_content.clientHeight;
     canvas.width = drawing_content.clientWidth;
-    let painting = false
+    let painting = false;
 
-    
+    let xAxis = e.clientX;
+    let yAxis = e.clientY;
+
+    function doTouchStart(e) {
+        e.preventDefault();
+        xAxis = e.targetTouches[0].pageX;
+        yAxis = e.targetTouches[0].pageY;
+
+        startPos();
+    }
+
+    function doTouchEnd (e){
+        e.preventDefault();
+        xAxis = e.targetTouches[0].pageX;
+        yAxis = e.targetTouches[0].pageY;
+
+        endPos();
+    }
+
+    function doTouchMove (e) {
+        e.preventDefault();
+        xAxis = e.targetTouches[0].pageX;
+        yAxis = e.targetTouches[0].pageY;
+
+        draw()
+    }
+
     window.addEventListener('resize', onScreenResize)
 
     function startPos (e){
@@ -410,10 +436,10 @@ function handleDrawing (){
         ctx.lineWidth = 300;
         ctx.lineCap = 'round';
         ctx.strokeStyle = color
-        ctx.lineTo(e.clientX, e.clientY - 90); // - 90 because cursor isn't centered on the Y AXIS
+        ctx.lineTo(xAxis, yAxis - 90); // - 90 because cursor isn't centered on the Y AXIS
         ctx.stroke()
         ctx.beginPath()
-        ctx.moveTo(e.clientX, e.clientY - 90);
+        ctx.moveTo(xAxis, yAxis - 90);
         
     }
 
@@ -421,9 +447,9 @@ function handleDrawing (){
     canvas.addEventListener('mouseup', endPos);
     canvas.addEventListener('mousemove', draw);
 
-    canvas.addEventListener('touchstart', startPos, false);
-    canvas.addEventListener('touchend', endPos, false);
-    canvas.addEventListener('touchmove', draw, false);
+    canvas.addEventListener('touchstart', doTouchStart, false);
+    canvas.addEventListener('touchend', doTouchEnd, false);
+    canvas.addEventListener('touchmove', doTouchMove, false);
 }
 
 
