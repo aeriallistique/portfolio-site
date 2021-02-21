@@ -421,9 +421,9 @@ function handleDrawing (){
     canvas.addEventListener('mouseup', endPos);
     canvas.addEventListener('mousemove', draw);
 
-    canvas.addEventListener('touchstart', startPos);
-    canvas.addEventListener('touchend', endPos);
-    canvas.addEventListener('touchmove', draw);
+    canvas.addEventListener('touchstart', startPos, false);
+    canvas.addEventListener('touchend', endPos, false);
+    canvas.addEventListener('touchmove', draw, false);
 }
 
 
