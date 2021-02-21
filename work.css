@@ -385,7 +385,7 @@ button:hover{
     pointer-events: none;
 }
 .cursorOn{
-    pointer-events: stroke;
+    
     cursor: pointer;
     
 }
