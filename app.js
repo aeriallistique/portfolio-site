@@ -421,25 +421,8 @@ function handleDrawing (){
     canvas.addEventListener('mouseup', endPos);
     canvas.addEventListener('mousemove', draw);
 
-    canvas.addEventListener('touchstart', startPos);
-    canvas.addEventListener('touchend', endPos);
-    canvas.addEventListener('touchmove', draw);
+    
 }
 
 
 
-document.body.addEventListener("touchstart", function (e) {
-    if (e.target == canvas) {
-      e.preventDefault();
-    }
-  });
-  document.body.addEventListener("touchend", function (e) {
-    if (e.target == canvas) {
-      e.preventDefault();
-    }
-  });
-  document.body.addEventListener("touchmove", function (e) {
-    if (e.target == canvas) {
-      e.preventDefault();
-    }
-  });
