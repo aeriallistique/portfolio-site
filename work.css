@@ -656,7 +656,10 @@ transition: .8s ease-in-out;
 @media (hover: none) and (pointer: coarse) {
     .main{
         height: auto!important;
-        display: block !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
     
     .aside1,
@@ -667,25 +670,43 @@ transition: .8s ease-in-out;
     }
     
     .main1{
-        display: block!important;
-        height: auto!important;
+        height: calc(100vh - 11vh);
         width: 100%;
-        transition: none!important;
+        display: flex;
+        transform: translateY(0);
+        transition: .8s ease-in-out;
+        z-index: 60;
     }
     
     .main2{
-        display: block!important;
         width: 100%;
-        height: auto!important;    
-        transition: none!important;
+        height: calc(100vh - 11vh);    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(44,243,249);
+        background: linear-gradient(90deg, rgba(44,243,249,1) 0%, rgba(37,246,140,1) 100%);
+        transform: translateY(0);
+        transition: .8s ease-in-out;
+        z-index: 15;
     }
+    
     .main3{
-        height: auto!important;
-        display: block !important;
+        width: 100%;
+        height: calc(100vh - 11vh);
+        display: flex;
+        position: relative;
+        background-color: white !important;
+        color: white !important;
+        transition: .8s ease-in-out;
+        z-index: 11;
     }
     
     .main4{
-        display: block !important;
-        height: auto !important;
+        height: calc(100vh - 11vh);
+        width: 100%;
+        display: flex;
+        transform: translateY(0);
+        transition: .8s ease-in-out;
     }
 }
