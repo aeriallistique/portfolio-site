@@ -655,6 +655,7 @@ transition: .8s ease-in-out;
 
 @media (hover: none) and (pointer: coarse) {
     .main{
+        width: 100vw;
         height: auto!important;
         display: flex !important;
         flex-direction: column !important;
