@@ -663,12 +663,9 @@ transition: .8s ease-in-out;
         align-items: center !important;
     }
     
-    .aside1,
-    .aside2,
-    .aside3,
-    .aside4{
-        display: none!important;
-    }
+   .buttons_area{
+       display: none;
+   }
     
     .main1{
         height: calc(100vh - 11vh);
