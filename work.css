@@ -673,7 +673,6 @@ transition: .8s ease-in-out;
         display: flex;
         transform: translateY(0);
         transition: .8s ease-in-out;
-        z-index: 60;
     }
     
     .main2{
@@ -686,7 +685,6 @@ transition: .8s ease-in-out;
         background: linear-gradient(90deg, rgba(44,243,249,1) 0%, rgba(37,246,140,1) 100%);
         transform: translateY(0);
         transition: .8s ease-in-out;
-        z-index: 15;
     }
     
     .main3{
@@ -697,7 +695,6 @@ transition: .8s ease-in-out;
         background-color: white !important;
         color: white !important;
         transition: .8s ease-in-out;
-        z-index: 11;
     }
     
     .main4{
