@@ -14,7 +14,6 @@ i{pointer-events: none;}
 body{
     font-family: 'Roboto Slab', serif;
     background: #f6f6f6;
-    
     height: 100vh;
     width: 100vw;
 }
@@ -313,10 +312,9 @@ button:hover{
     width: 1fr;
 }
 
-/*  ............ DRAWING SECTION ....... */
+/*  ............ DRAWING SECTION ..................... */
 
 .main3{
-    
     width: 100%;
     height: calc(100vh - 11vh);
     display: flex;
@@ -490,15 +488,56 @@ transition: .8s ease-in-out;
     border-bottom: 2px solid rgb(245, 241, 241);
 }
 
+/* ................UTILITY CLASSES FOR MOBILE........................*/
+.main_mobile{
+    height: auto!important;
+    display: block !important;
+}
+
+.aside1_mobile,
+.aside2_mobile,
+.aside3_mobile,
+.aside4_mobile{
+    display: none!important;
+}
+
+.main1_mobile{
+    display: block!important;
+    height: auto!important;
+    width: 100%;
+    transition: none!important;
+}
+
+.main2_mobile{
+    display: block!important;
+    width: 100%;
+    height: auto!important;    
+    transition: none!important;
+}
+.main3_mobile{
+    height: auto!important;
+    display: block !important;
+}
+
+.main4_mobile{
+    display: block !important;
+    height: auto !important;
+}
+
+
+
+
 
 
 /* ..............................MEDIA QUERIES........................*/
 
 
 @media only screen and (max-width: 868px){
+
     .main1, .main2, .main3, .main4{
         flex-direction: column;
     }
+
     .main1 .content, .main1 .aside1,
     .main2 .content, .main2 .aside1,
     .main3 .drawing_content, .main3 .aside1,
@@ -610,4 +649,43 @@ transition: .8s ease-in-out;
 
     .ul li{padding:0 .5rem;}
     .ul li a{font-size: 4vw;}
+}
+
+/* =============MEDIA QUERIES FOR MOBILE ==============*/
+
+@media (hover: none) and (pointer: coarse) {
+    .main{
+        height: auto!important;
+        display: block !important;
+    }
+    
+    .aside1,
+    .aside2,
+    .aside3,
+    .aside4{
+        display: none!important;
+    }
+    
+    .main1{
+        display: block!important;
+        height: auto!important;
+        width: 100%;
+        transition: none!important;
+    }
+    
+    .main2{
+        display: block!important;
+        width: 100%;
+        height: auto!important;    
+        transition: none!important;
+    }
+    .main3{
+        height: auto!important;
+        display: block !important;
+    }
+    
+    .main4{
+        display: block !important;
+        height: auto !important;
+    }
 }
