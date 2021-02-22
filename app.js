@@ -386,11 +386,7 @@ function handleDrawing (){
     canvas.addEventListener('mousedown', startPos);
     canvas.addEventListener('mouseup', endPos);
     canvas.addEventListener('mousemove', draw);
-
-    canvas.addEventListener('touchstart', doTouchStart, false);
-    canvas.addEventListener('touchend', doTouchEnd, false);
-    canvas.addEventListener('touchmove', doTouchMove, false);
-
+    
     drawing_content.classList.add('cursorOn')
     wrapper.classList.add('cursorOff')
     side.classList.add('cursorOff')
@@ -402,32 +398,7 @@ function handleDrawing (){
     canvas.width = drawing_content.clientWidth;
     let painting = false;
 
-    let xAxis = e.clientX;
-    let yAxis = e.clientY;
 
-    function doTouchStart(e) {
-        e.preventDefault();
-        xAxis = e.targetTouches[0].pageX;
-        yAxis = e.targetTouches[0].pageY;
-
-        startPos();
-    }
-
-    function doTouchEnd (e){
-        e.preventDefault();
-        xAxis = e.targetTouches[0].pageX;
-        yAxis = e.targetTouches[0].pageY;
-
-        endPos();
-    }
-
-    function doTouchMove (e) {
-        e.preventDefault();
-        xAxis = e.targetTouches[0].pageX;
-        yAxis = e.targetTouches[0].pageY;
-
-        draw(e)
-    }
 
     window.addEventListener('resize', onScreenResize)
 
@@ -457,18 +428,3 @@ function handleDrawing (){
 
 
 
-document.body.addEventListener("touchstart", function (e) {
-    if (e.target == canvas) {
-      e.preventDefault();
-    }
-  });
-  document.body.addEventListener("touchend", function (e) {
-    if (e.target == canvas) {
-      e.preventDefault();
-    }
-  });
-  document.body.addEventListener("touchmove", function (e) {
-    if (e.target == canvas) {
-      e.preventDefault();
-    }
-  });
