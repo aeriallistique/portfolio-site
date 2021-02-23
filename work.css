@@ -679,7 +679,7 @@ transition: .8s ease-in-out;
     
     .main2{
         width: 100vw!important;
-        height: 150vw!important;    
+        height: 170vw!important;    
         display: flex!important;
         flex-direction: column;
         justify-content: center;
@@ -772,9 +772,9 @@ transition: .8s ease-in-out;
     }
 
     .main1 .aside1,
-    .main2 .aside1,
     .main3 .aside1,
     .main4 .aside1{height:80vw !important}
 
     .main1 .aside1{margin-bottom: 1rem!important;}
+    .main2 .aside1{ height: 40vw!important;}
 }
