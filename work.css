@@ -689,7 +689,7 @@ transition: .8s ease-in-out;
         transform: translateY(0);
         transition: .8s ease-in-out;
         position: static !important;
-        margin-top: 150vw!important;
+        margin-top: 230vw!important;
     }
 
     .calculator_content{
@@ -718,7 +718,7 @@ transition: .8s ease-in-out;
         justify-content: center;
         align-content: center;
         background-color: rgba(255, 255, 255, .5);
-        margin-top: 1rem;
+        margin-top: 0;
     }
     .top{
         min-height: 50px;
