@@ -668,31 +668,31 @@ transition: .8s ease-in-out;
    }
     
     .main1{
-        height: calc(100vh - 11vh);
-        width: 100%;
-        display: flex;
+        height: calc(100vh - 11vh)!important;
+        width: 100%!important;
+        display: flex!important;
         transform: translateY(0);
         transition: .8s ease-in-out;
     }
     
     .main2{
-        width: 100%;
-        height: calc(100vh - 11vh);    
-        display: flex;
+        width: 100%!important;
+        height: calc(100vh - 11vh)!important;    
+        display: flex!important;
         justify-content: center;
         align-items: center;
         background: rgb(44,243,249);
         background: linear-gradient(90deg, rgba(44,243,249,1) 0%, rgba(37,246,140,1) 100%);
         transform: translateY(0);
         transition: .8s ease-in-out;
-        display: block;
+        display: block!important;
     }
 
     .calculator_content{
         display: flex;
         justify-content: center;
         align-items: center;
-        display: block;
+        display: block!important;
     }
     
     button{
@@ -714,6 +714,7 @@ transition: .8s ease-in-out;
         justify-content: center;
         align-content: center;
         background-color: rgba(255, 255, 255, .5);
+        display: block!important;
     }
     .top{
         min-height: 100px;
@@ -757,12 +758,12 @@ transition: .8s ease-in-out;
     }
     
     .main4{
-        height: calc(100vh - 11vh);
-        width: 100%;
+        height: calc(100vh - 11vh)!important;
+        width: 100%!important;
         display: flex;
         transform: translateY(0);
         transition: .8s ease-in-out;
-        display:block;
+        display:block!important;
     }
 
     .main1 .aside1,
