@@ -662,6 +662,7 @@ transition: .8s ease-in-out;
         justify-content: space-evenly !important;
         align-items: center !important;
         position: static;
+        z-index: 1;
     }
     
    .buttons_area{
@@ -688,6 +689,7 @@ transition: .8s ease-in-out;
         transform: translateY(0);
         transition: .8s ease-in-out;
         position: static !important;
+        margin-top: 150vw!important;
     }
 
     .calculator_content{
