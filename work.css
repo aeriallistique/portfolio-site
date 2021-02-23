@@ -677,7 +677,7 @@ transition: .8s ease-in-out;
     
     .main2{
         width: 100%!important;
-        height: 150vw!important;    
+        height: 200vw!important;    
         display: flex!important;
         justify-content: center;
         align-items: center;
@@ -692,7 +692,7 @@ transition: .8s ease-in-out;
         display: flex;
         justify-content: center;
         align-items: center;
-        display: block!important;
+        height: auto;
     }
     
     button{
