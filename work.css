@@ -677,7 +677,7 @@ transition: .8s ease-in-out;
     
     .main2{
         width: 100%!important;
-        height: auto!important;    
+        height: 150vw!important;    
         display: flex!important;
         flex-direction: column;
         justify-content: center;
