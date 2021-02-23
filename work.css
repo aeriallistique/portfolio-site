@@ -656,7 +656,7 @@ transition: .8s ease-in-out;
 @media (hover: none) and (pointer: coarse) {
     .main{
         width: 100vw;
-        height: 400vh;
+        height: 500vw;
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-evenly !important;
@@ -668,8 +668,8 @@ transition: .8s ease-in-out;
    }
     
     .main1{
-        height: calc(100vh - 11vh)!important;
-        width: 100%!important;
+        height:100vw!important;
+        width: 100vw!important;
         display: flex!important;
         transform: translateY(0);
         transition: .8s ease-in-out;
@@ -677,7 +677,7 @@ transition: .8s ease-in-out;
     
     .main2{
         width: 100%!important;
-        height: calc(100vh - 11vh)!important;    
+        height: 100vw!important;    
         display: flex!important;
         justify-content: center;
         align-items: center;
@@ -749,7 +749,7 @@ transition: .8s ease-in-out;
     
     .main3{
         width: 100%;
-        height: calc(100vh - 11vh);
+        height: 100vw !important;
         display: flex;
         position: relative;
         background-color: white !important;
@@ -758,7 +758,7 @@ transition: .8s ease-in-out;
     }
     
     .main4{
-        height: calc(100vh - 11vh)!important;
+        height: 100vw!important;
         width: 100%!important;
         display: flex;
         transform: translateY(0);
