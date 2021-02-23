@@ -692,6 +692,7 @@ transition: .8s ease-in-out;
         display: flex;
         justify-content: center;
         align-items: center;
+        display: block;
     }
     
     button{
@@ -761,6 +762,7 @@ transition: .8s ease-in-out;
         display: flex;
         transform: translateY(0);
         transition: .8s ease-in-out;
+        display:block;
     }
 
     .main1 .aside1,
