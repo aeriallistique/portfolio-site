@@ -771,5 +771,7 @@ transition: .8s ease-in-out;
     .main1 .aside1,
     .main2 .aside1,
     .main3 .aside1,
-    .main4 .aside1{height:80vw}
+    .main4 .aside1{height:80vw !important}
+
+    .main1 .aside1{margin-bottom: 1rem!important;}
 }
