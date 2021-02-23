@@ -675,7 +675,7 @@ transition: .8s ease-in-out;
         display: flex!important;
         transform: translateY(0);
         transition: .8s ease-in-out;
-        margin-top: 2rem;
+        margin-top: 10rem;
     }
     
     .main2{
@@ -683,7 +683,7 @@ transition: .8s ease-in-out;
         height: 190vw!important;    
         display: flex!important;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         background: rgb(44,243,249);
         background: linear-gradient(90deg, rgba(44,243,249,1) 0%, rgba(37,246,140,1) 100%);
@@ -691,7 +691,7 @@ transition: .8s ease-in-out;
         transition: .8s ease-in-out;
         position: static !important;
         border: 2px solid red;
-        margin-top: 170vw!important;
+        margin-top: 160vw!important;
 
     }
 
