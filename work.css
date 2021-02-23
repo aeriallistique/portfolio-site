@@ -689,7 +689,7 @@ transition: .8s ease-in-out;
         transform: translateY(0);
         transition: .8s ease-in-out;
         position: static !important;
-        margin-top: 180vw!important;
+        margin-top: 170vw!important;
     }
 
     .calculator_content{
