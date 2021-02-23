@@ -675,7 +675,7 @@ transition: .8s ease-in-out;
         display: flex!important;
         transform: translateY(0);
         transition: .8s ease-in-out;
-        margin-top: 6rem;
+        margin: 6rem 0 0 4rem;
     }
     
     .main2{
