@@ -656,7 +656,7 @@ transition: .8s ease-in-out;
 @media (hover: none) and (pointer: coarse) {
     .main{
         width: 100vw;
-        height: 500vw;
+        height: auto;
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-evenly !important;
@@ -718,8 +718,9 @@ transition: .8s ease-in-out;
         display: block!important;
     }
     .top{
-        min-height: 100px;
+        min-height: 50px;
         max-height: auto;
+        width: 100%;
         grid-column: span 4;
         background-color: rgb(32, 46, 91);
         border: none;
