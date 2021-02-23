@@ -661,6 +661,7 @@ transition: .8s ease-in-out;
         flex-direction: column !important;
         justify-content: space-evenly !important;
         align-items: center !important;
+        position: static;
     }
     
    .buttons_area{
