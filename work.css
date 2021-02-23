@@ -685,7 +685,7 @@ transition: .8s ease-in-out;
         background: linear-gradient(90deg, rgba(44,243,249,1) 0%, rgba(37,246,140,1) 100%);
         transform: translateY(0);
         transition: .8s ease-in-out;
-        display: block!important;
+        position: static !important;
     }
 
     .calculator_content{
@@ -763,7 +763,7 @@ transition: .8s ease-in-out;
         display: flex;
         transform: translateY(0);
         transition: .8s ease-in-out;
-        display:block!important;
+        position: static !important;
     }
 
     .main1 .aside1,
