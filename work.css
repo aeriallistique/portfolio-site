@@ -677,9 +677,9 @@ transition: .8s ease-in-out;
     
     .main2{
         width: 100%!important;
-        height: 500vw!important;    
+        height: auto!important;    
         display: flex!important;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background: rgb(44,243,249);
@@ -708,14 +708,14 @@ transition: .8s ease-in-out;
         background-color: rgba(255, 244, 244, .7);
     }
     
-    .calculator{
+    .main2 .calculator{
         width: 400px;
-        display: grid;
+        display: grid !important;
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
         align-content: center;
         background-color: rgba(255, 255, 255, .5);
-        display: block!important;
+        margin-top: 1rem;
     }
     .top{
         min-height: 50px;
