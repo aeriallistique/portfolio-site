@@ -679,6 +679,7 @@ transition: .8s ease-in-out;
         width: 100%!important;
         height: 200vw!important;    
         display: flex!important;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background: rgb(44,243,249);
