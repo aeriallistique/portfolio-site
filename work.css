@@ -724,7 +724,7 @@ transition: .8s ease-in-out;
         margin-top: 0;
     }
     .top{
-        min-height: 50px;
+        min-height: 70px;
         max-height: auto;
         width: 100%;
         grid-column: span 4;
