@@ -762,6 +762,7 @@ transition: .8s ease-in-out;
         background-color: white !important;
         color: white !important;
         transition: .8s ease-in-out;
+        border: 2px solid red;
     }
     
     .main4{
@@ -775,7 +776,7 @@ transition: .8s ease-in-out;
 
     .main1 .aside1,
     .main3 .aside1,
-    .main4 .aside1{height:80vw !important}
+    .main4 .aside1{height:70vw !important}
 
     .main1 .aside1{margin-bottom: 1rem!important;
     }
