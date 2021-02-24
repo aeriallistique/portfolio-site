@@ -690,8 +690,7 @@ transition: .8s ease-in-out;
         transform: translateY(0);
         transition: .8s ease-in-out;
         position: static !important;
-        border: 2px solid red;
-        margin-top: 44.2rem!important;
+        margin-top: 44.5rem!important;
 
     }
 
