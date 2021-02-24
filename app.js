@@ -30,6 +30,9 @@ const main4img4 = main4.querySelector('#main4img4')
 const main4ImgArray = main4.querySelectorAll('img')
 const main1ImgArray = main1.querySelectorAll('img')
 
+const labExperimentLink = main1.getElementById('lab_exp')
+console.log(labExperimentLink)
+
 
 const canvas = document.getElementById('canvas');
 const drawing_content = main3.querySelector('.drawing_content')
@@ -41,6 +44,10 @@ const arrayofButtons = [main1DownBtn, main2BtnDown, main2BtnUp, main3BtnDown, ma
 let colors = ['#0652DD', '#EE5A24', '#6F1E51', '#006266', '#2C3A47', '#82589F', '#20bf6b', '#eb3b5a'];
 let color = colors[Math.floor(Math.random()* colors.length)] ;
 
+
+labExperimentLink.addEventListener('touchstart', ()=>{
+
+})
 
 // CHEVRON BUTTONS CLICK EVENTS
 arrayofButtons.forEach(btn =>{
