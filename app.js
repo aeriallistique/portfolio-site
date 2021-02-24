@@ -45,10 +45,6 @@ let colors = ['#0652DD', '#EE5A24', '#6F1E51', '#006266', '#2C3A47', '#82589F', 
 let color = colors[Math.floor(Math.random()* colors.length)] ;
 
 
-labExperimentLink.addEventListener('touchstart', ()=>{
-
-})
-
 // CHEVRON BUTTONS CLICK EVENTS
 arrayofButtons.forEach(btn =>{
     btn.addEventListener('click', (e)=>{
