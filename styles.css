@@ -229,10 +229,14 @@ body{
     .about{
         text-align: center;
     }
-    .about h3{ margin-top: 4rem;}
 
-/* ................MEDIA QUERIES  section..........  */
+/* ................MEDIA QUERIES FOR MOBILE....................  */
 
+@media (hover: none) and (pointer: coarse) and ( max-width: 375px){
+    .about h3{ margin-top: 4rem;
+        color: red;
+    }
+}
 
 
 
