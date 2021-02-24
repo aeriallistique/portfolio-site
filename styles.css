@@ -234,8 +234,7 @@ body{
 
 @media (hover: none) and (pointer: coarse){
     .about h3{
-        margin-top: 3rem;
-        color: red;
+        margin-top: 2rem;
     }
 }
 
