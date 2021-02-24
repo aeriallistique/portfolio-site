@@ -229,11 +229,11 @@ body{
     .about{
         text-align: center;
     }
+    .about h3{ margin-top: 2rem;}
 
 /* ................MEDIA QUERIES  section..........  */
 
 
-/* ................CONTACT PAGE SPECIFIC CSS RULES  section..........  */
 
 
 /* ................Utility classes..........  */
