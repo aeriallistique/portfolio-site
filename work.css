@@ -763,7 +763,9 @@ transition: .8s ease-in-out;
         color: white !important;
         transition: .8s ease-in-out;
     }
-    .main3 canvas{ border: 2px solid red;}
+    .main3 canvas{ border: 2px solid red;
+        width: 100vw;
+    }
     
     .main4{
         height: 150vw!important;
