@@ -233,8 +233,25 @@ body{
 /* ................MEDIA QUERIES FOR MOBILE....................  */
 
 @media (hover: none) and (pointer: coarse){
-    .about h3{ margin-top: 4rem;
+    .main{
+        position: static;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
         color: red;
+    }
+    .about{
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .about h3{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 30px;
     }
 }
 
