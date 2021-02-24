@@ -762,8 +762,8 @@ transition: .8s ease-in-out;
         background-color: white !important;
         color: white !important;
         transition: .8s ease-in-out;
-        border: 2px solid red;
     }
+    .main3 canvas{ border: 2px solid red;}
     
     .main4{
         height: 150vw!important;
