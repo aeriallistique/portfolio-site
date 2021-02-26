@@ -436,7 +436,7 @@ function startup() {
   document.addEventListener("DOMContentLoaded", startup);
 
   var ongoingTouches = [];
-  var colorChoice = colorForTouch();
+  var colorChoice = 'green';//colorForTouch();
 
   function handleStart(evt) {
     evt.preventDefault();
