@@ -441,6 +441,11 @@ function startup() {
   function handleStart(evt) {
     evt.preventDefault();
     var el = document.getElementById("canvas");
+    side.classList.remove('cursorOff')
+        side.classList.add('cursorOn')
+        wrapper.classList.remove('cursorOff')
+        wrapper.classList.add('cursorOn')
+
     var ctx = el.getContext("2d");
     var touches = evt.changedTouches;
     
@@ -461,6 +466,10 @@ function startup() {
   function handleMove(evt) {
     evt.preventDefault();
     var el = document.getElementById("canvas");
+    side.classList.remove('cursorOff')
+        side.classList.add('cursorOn')
+        wrapper.classList.remove('cursorOff')
+        wrapper.classList.add('cursorOn')
     var ctx = el.getContext("2d");
     var touches = evt.changedTouches;
   
