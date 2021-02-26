@@ -447,7 +447,7 @@ function startup() {
     for (var i = 0; i < touches.length; i++) {
       ongoingTouches.push(copyTouch(touches[i]));
       ctx.beginPath();
-      ctx.lineTo(evt.pageX, evt.pageY - 150, 8, 0, 2 * Math.PI, false);  // a circle at the start
+      ctx.lineTo(evt.pageX, evt.pageY, 8, 0, 2 * Math.PI, false);  // a circle at the start
       ctx.lineWidth = 200;
       ctx.lineCap = 'round';
       ctx.strokeStyle = colorChoice;
@@ -471,7 +471,7 @@ function startup() {
       if (idx >= 0) {
         ctx.beginPath();
         ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY - 150);
-        ctx.lineTo(touches[i].pageX, touches[i].pageY - 150);
+        ctx.lineTo(touches[i].pageX, touches[i].pageY);
         ctx.lineWidth = 12;
         ctx.lineCap = 'round'
         ctx.strokeStyle = colorChoice;
