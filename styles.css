@@ -14,7 +14,7 @@ body{
     font-family: 'Roboto Slab', serif;
     background: #f6f6f6;
     position: relative;
-    min-height: 100%;
+    height: 100vh;
 }
 
 /* ....................header section..........  */
@@ -130,7 +130,7 @@ body{
 /* ................FOOTER   section..........  */
 .footer{
     position: absolute;
-    bottom: 0;
+    top: 100%;
     height: auto;
     width: 100%;
     padding:.4rem 0;
