@@ -473,6 +473,12 @@ function startup() {
   function handleMove(evt) {
     evt.preventDefault();
     var el = document.getElementById("canvas");
+    drawing_content.classList.remove('cursorOn')
+    wrapper.classList.add('cursorOn')
+    wrapper.classList.remove('cursorOff')
+
+    side.classList.remove('cursorOff')
+    side.classList.add('cursorOn')
     
     var ctx = el.getContext("2d");
     var touches = evt.changedTouches;
@@ -503,6 +509,12 @@ function startup() {
     evt.preventDefault();
     
     var el = document.getElementById("canvas");
+    drawing_content.classList.remove('cursorOn')
+    wrapper.classList.add('cursorOn')
+    wrapper.classList.remove('cursorOff')
+
+    side.classList.remove('cursorOff')
+    side.classList.add('cursorOn')
     var ctx = el.getContext("2d");
     var touches = evt.changedTouches;
   
