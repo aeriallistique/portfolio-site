@@ -401,8 +401,7 @@ function handleDrawing (){
     let painting = false;
 
     window.addEventListener('resize', (e)=>{
-        console.log(e)
-        if( e.target.innerWidth <  Number(400) ){console.log(`na acum?`)}
+        if( e.target.innerWidth <  Number(400) ){return}
         else{ onScreenResize()}
 
     })
@@ -446,7 +445,13 @@ function startup() {
   function handleStart(evt) {
     evt.preventDefault();
     var el = document.getElementById("canvas");
-    
+    drawing_content.classList.remove('cursorOn')
+    wrapper.classList.add('cursorOn')
+    wrapper.classList.remove('cursorOff')
+
+    side.classList.remove('cursorOff')
+    side.classList.add('cursorOn')
+
 
     var ctx = el.getContext("2d");
     var touches = evt.changedTouches;
