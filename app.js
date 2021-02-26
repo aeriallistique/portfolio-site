@@ -401,6 +401,7 @@ function handleDrawing (){
     let painting = false;
 
     window.addEventListener('resize', (e)=>{
+        console.log(e)
         if( e.clientWidth <  400 ){console.log(`na acum?`)}
         else{ onScreenResize()}
 
