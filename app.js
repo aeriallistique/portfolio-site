@@ -479,7 +479,7 @@ function startup() {
   
       if (idx >= 0) {
         ctx.beginPath();
-        ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY - 150);
+        ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY);
         ctx.lineTo(touches[i].pageX, touches[i].pageY);
         ctx.lineWidth = 12;
         ctx.lineCap = 'round'
