@@ -402,7 +402,7 @@ function handleDrawing (){
 
     window.addEventListener('resize', (e)=>{
         console.log(e)
-        if( e.clientWidth <  400 ){console.log(`na acum?`)}
+        if( e.currentTarget.innerWidth <  400 ){console.log(`na acum?`)}
         else{ onScreenResize()}
 
     })
@@ -446,10 +446,7 @@ function startup() {
   function handleStart(evt) {
     evt.preventDefault();
     var el = document.getElementById("canvas");
-    side.classList.remove('cursorOff')
-        side.classList.add('cursorOn')
-        wrapper.classList.remove('cursorOff')
-        wrapper.classList.add('cursorOn')
+    
 
     var ctx = el.getContext("2d");
     var touches = evt.changedTouches;
@@ -471,10 +468,7 @@ function startup() {
   function handleMove(evt) {
     evt.preventDefault();
     var el = document.getElementById("canvas");
-    side.classList.remove('cursorOff')
-        side.classList.add('cursorOn')
-        wrapper.classList.remove('cursorOff')
-        wrapper.classList.add('cursorOn')
+    
     var ctx = el.getContext("2d");
     var touches = evt.changedTouches;
   
