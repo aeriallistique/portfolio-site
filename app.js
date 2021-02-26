@@ -400,7 +400,11 @@ function handleDrawing (){
     canvas.width = drawing_content.clientWidth;
     let painting = false;
 
-    window.addEventListener('resize', onScreenResize)
+    window.addEventListener('resize', ()=>{
+        if( canvas.width < 400){return}
+        else{ onScreenResize()}
+
+    })
 
     function startPos (e){
         painting = true;
