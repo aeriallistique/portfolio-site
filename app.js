@@ -401,7 +401,7 @@ function handleDrawing (){
     let painting = false;
 
     window.addEventListener('resize', ()=>{
-        if( canvas.width < 400){return}
+        if( canvas.width < 400 ){console.log(`dap`)}
         else{ onScreenResize()}
 
     })
