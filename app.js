@@ -402,7 +402,7 @@ function handleDrawing (){
 
     window.addEventListener('resize', (e)=>{
         console.log(e)
-        if( e.currentTarget.innerWidth <  400 ){console.log(`na acum?`)}
+        if( e.target.innerWidth <  Number(400) ){console.log(`na acum?`)}
         else{ onScreenResize()}
 
     })
