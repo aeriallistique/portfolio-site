@@ -30,8 +30,7 @@ const main4img4 = main4.querySelector('#main4img4')
 const main4ImgArray = main4.querySelectorAll('img')
 const main1ImgArray = main1.querySelectorAll('img')
 
-const labExperimentLink = main1.getElementById('lab_exp')
-console.log(labExperimentLink)
+
 
 
 const canvas = document.getElementById('canvas');
