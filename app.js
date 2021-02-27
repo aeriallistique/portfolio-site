@@ -326,7 +326,7 @@ function selectOperation(e){
 function doTheMath(){
     if(prevOperand.innerText == '')return 
     let signAtEnd = Array.from(prevOperand.innerText).pop();
-
+    console.log(prevOperand.innerText)
     switch(signAtEnd){
         case signAtEnd = '+':
            currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) + Number(currentOperand.innerText)}`;
