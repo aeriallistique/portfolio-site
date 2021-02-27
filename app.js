@@ -343,7 +343,7 @@ function doTheMath(){
                 prevOperand.innerText = '';
                 console.log(`divide`, signAtEnd)
                  break;
-        case signAtEnd ==== '*':
+        case signAtEnd === '*':
                     currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) * Number(currentOperand.innerText)}`;
                     prevOperand.innerText = '';
                     console.log(`multiply`, signAtEnd)
