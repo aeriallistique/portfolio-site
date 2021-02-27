@@ -240,6 +240,9 @@ body{
     .about h3{
         margin-top: 2rem;
     }
+    footer{
+        height: 3rem;
+    }
     footer p{
         border: 1px solid red;
         display: flex;
