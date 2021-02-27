@@ -242,7 +242,7 @@ body{
     }
     footer{
         height: 4rem;
-        border: 1px solid black;
+        border: 1px solid pink;
     }
     footer p{
         display: flex;
@@ -250,7 +250,7 @@ body{
         align-items: center;
         height: 100%;
         text-align: center;
-        margin:0 auto!important;
+        margin-left: 3rem!important;
     }
 }
 
