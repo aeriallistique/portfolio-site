@@ -18,7 +18,6 @@ body{
 .page-container{
     position: relative;
     min-height: 10vh;
-    border: 1px solid black;
 }
 
 /* ....................header section..........  */
@@ -35,7 +34,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid green;
 
 }
 .title{
@@ -92,7 +90,6 @@ body{
     justify-content: center;
     align-items: center;
     height: auto;
-    border: 1px solid red;
 }
 .about{
     width: 40%;
