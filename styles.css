@@ -241,13 +241,15 @@ body{
         margin-top: 2rem;
     }
     footer{
-        height: 3rem;
+        height: 4rem;
+        border: 1px solid blue;
     }
     footer p{
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
+        margin-left:0 auto;
     }
 }
 
