@@ -215,10 +215,7 @@ body{
     }
     footer{padding-bottom: .5rem;
     }
-    footer p{
-        margin-left: 1rem;
-        padding-bottom: .5rem;
-    }
+    
 }
 
 @media only screen and (max-width: 375px){
@@ -231,6 +228,10 @@ body{
     }
     .about{
         text-align: center;
+    }
+    footer p{
+        margin-left: 1rem;
+        padding-bottom: .5rem;
     }
 }
 /* ................MEDIA QUERIES FOR MOBILE....................  */
