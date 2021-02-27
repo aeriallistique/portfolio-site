@@ -170,7 +170,6 @@ body{
         
     }
     .footer p{
-        margin-left: 0;
         justify-content: flex-start;
         margin-left: 2rem;
     }
@@ -214,7 +213,12 @@ body{
     .main{
         margin-top: 10vmax;
     }
-    footer{padding-bottom: .5rem;}
+    footer{padding-bottom: .5rem;
+    }
+    footer p{
+        margin-left: 1rem;
+        padding-bottom: .5rem;
+    }
 }
 
 @media only screen and (max-width: 375px){
