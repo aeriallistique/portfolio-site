@@ -441,7 +441,7 @@ function startup() {
   function handleStart(evt) {
     evt.preventDefault();
     var el = document.getElementById("canvas");
-    drawing_content.classList.remove('cursorOn')
+    drawing_content.classList.add('cursorOn')
     wrapper.classList.add('cursorOff')
     wrapper.classList.remove('cursorOn')
 
@@ -469,12 +469,12 @@ function startup() {
   function handleMove(evt) {
     evt.preventDefault();
     var el = document.getElementById("canvas");
-    drawing_content.classList.remove('cursorOn')
-    wrapper.classList.add('cursorOn')
-    wrapper.classList.remove('cursorOff')
+    drawing_content.classList.add('cursorOn')
+    wrapper.classList.add('cursorOff')
+    wrapper.classList.remove('cursorOn')
 
-    side.classList.remove('cursorOff')
-    side.classList.add('cursorOn')
+    side.classList.remove('cursorOn')
+    side.classList.add('cursorOff')
     
     var ctx = el.getContext("2d");
     var touches = evt.changedTouches;
@@ -505,12 +505,12 @@ function startup() {
     evt.preventDefault();
     
     var el = document.getElementById("canvas");
-    drawing_content.classList.remove('cursorOn')
-    wrapper.classList.add('cursorOn')
-    wrapper.classList.remove('cursorOff')
+    drawing_content.classList.add('cursorOn')
+    wrapper.classList.add('cursorOff')
+    wrapper.classList.remove('cursorOn')
 
-    side.classList.remove('cursorOff')
-    side.classList.add('cursorOn')
+    side.classList.remove('cursorOn')
+    side.classList.add('cursorOff')
     var ctx = el.getContext("2d");
     var touches = evt.changedTouches;
   
