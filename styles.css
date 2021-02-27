@@ -240,7 +240,13 @@ body{
     .about h3{
         margin-top: 2rem;
     }
-    footer p{border: 1px solid red;}
+    footer p{
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
 }
 
 
