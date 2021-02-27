@@ -92,7 +92,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 100%;
 }
 .about{
     width: 40%;
