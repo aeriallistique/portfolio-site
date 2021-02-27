@@ -85,11 +85,11 @@ body{
 /* ..........Main   section..........  */
 .main{
     margin-top: 6vw;
-    padding: 2.5rem 1rem;
+    padding: 0, 1rem, 2.5rem, 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: auto;
 }
 .about{
     width: 40%;
