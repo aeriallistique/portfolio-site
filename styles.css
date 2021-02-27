@@ -236,7 +236,7 @@ body{
 }
 /* ................MEDIA QUERIES FOR MOBILE....................  */
 
-@media (hover: none) and (pointer: coarse) and (max-width: 375px){
+@media (hover: none) and (pointer: coarse){
     .about h3{
         margin-top: 2rem;
     }
