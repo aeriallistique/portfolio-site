@@ -214,6 +214,7 @@ body{
     .main{
         margin-top: 10vmax;
     }
+    footer{padding-bottom: .5rem;}
 }
 
 @media only screen and (max-width: 375px){
