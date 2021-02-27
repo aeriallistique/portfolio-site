@@ -442,11 +442,11 @@ function startup() {
     evt.preventDefault();
     var el = document.getElementById("canvas");
     drawing_content.classList.remove('cursorOn')
-    wrapper.classList.add('cursorOn')
-    wrapper.classList.remove('cursorOff')
+    wrapper.classList.add('cursorOff')
+    wrapper.classList.remove('cursorOn')
 
-    side.classList.remove('cursorOff')
-    side.classList.add('cursorOn')
+    side.classList.remove('cursorOn')
+    side.classList.add('cursorOff')
 
 
     var ctx = el.getContext("2d");
