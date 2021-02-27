@@ -17,7 +17,7 @@ body{
 
 .page-container{
     position: relative;
-    min-height: 100vh;
+    min-height: 10vh;
     border: 1px solid black;
 }
 
