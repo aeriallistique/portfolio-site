@@ -326,25 +326,39 @@ function selectOperation(e){
 function doTheMath(){
     if(prevOperand.innerText == '')return 
     let signAtEnd = Array.from(prevOperand.innerText).pop();
-    console.log(prevOperand.innerText, signAtEnd)
-    switch(signAtEnd){
-        case signAtEnd = '+':
-           currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) + Number(currentOperand.innerText)}`;
-           prevOperand.innerText = '';
-            break;
-        case signAtEnd = '-':
-           currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) - Number(currentOperand.innerText)}`;
-           prevOperand.innerText = '';
-            break;
-        case signAtEnd = '/':
-                currentOperand.innerText = `= ${Number(prevOperand.innerText.slice(0, -1)) / Number(currentOperand.innerText)}`;
-                prevOperand.innerText = '';
-                 break;
-        case signAtEnd = '*':
-                    currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) * Number(currentOperand.innerText)}`;
-                    prevOperand.innerText = '';
-                     break;
-    }
+
+    //switch(signAtEnd){
+    //    case signAtEnd = '+':
+    //       currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) + Number(currentOperand.innerText)}`;
+    //       prevOperand.innerText = '';
+    //        break;
+    //    case signAtEnd = '-':
+    //       currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) - Number(currentOperand.innerText)}`;
+    //       prevOperand.innerText = '';
+    //        break;
+    //    case signAtEnd = '/':
+    //            currentOperand.innerText = `= ${Number(prevOperand.innerText.slice(0, -1)) / Number(currentOperand.innerText)}`;
+    //            prevOperand.innerText = '';
+    //             break;
+    //    case signAtEnd = '*':
+    //                currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) * Number(currentOperand.innerText)}`;
+    //                prevOperand.innerText = '';
+    //                 break;
+    //}
+
+    if(signAtEnd ='+'){
+        currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) + Number(currentOperand.innerText)}`;
+        prevOperand.innerText = '';
+    }else if(signAtEnd = '-'){
+        currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) - Number(currentOperand.innerText)}`;
+        prevOperand.innerText = '';
+    }else if(signAtEnd = '*'){
+        currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) * Number(currentOperand.innerText)}`;
+        prevOperand.innerText = '';
+    }else if(signAtEnd = '/'){
+        currentOperand.innerText = `= ${Number(prevOperand.innerText.slice(0, -1)) / Number(currentOperand.innerText)}`;
+        prevOperand.innerText = '';
+    }else{ return }
 }
 
 function addDecimal(e){
