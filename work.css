@@ -489,44 +489,6 @@ transition: .8s ease-in-out;
 }
 
 /* ................UTILITY CLASSES FOR MOBILE........................*/
-.main_mobile{
-    height: auto!important;
-    display: block !important;
-}
-
-.aside1_mobile,
-.aside2_mobile,
-.aside3_mobile,
-.aside4_mobile{
-    display: none!important;
-}
-
-.main1_mobile{
-    display: block!important;
-    height: auto!important;
-    width: 100%;
-    transition: none!important;
-}
-
-.main2_mobile{
-    display: block!important;
-    width: 100%;
-    height: auto!important;    
-    transition: none!important;
-}
-.main3_mobile{
-    height: auto!important;
-    display: block !important;
-}
-
-.main4_mobile{
-    display: block !important;
-    height: auto !important;
-}
-
-
-
-
 
 
 /* ..............................MEDIA QUERIES........................*/
