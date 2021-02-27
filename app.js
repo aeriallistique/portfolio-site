@@ -346,16 +346,16 @@ function doTheMath(){
     //                 break;
     //}
 
-    if(signAtEnd == '+'){
+    if(signAtEnd === '+'){
         currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) + Number(currentOperand.innerText)}`;
         prevOperand.innerText = '';
-    }else if(signAtEnd == '-'){
+    }else if(signAtEnd === '-'){
         currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) - Number(currentOperand.innerText)}`;
         prevOperand.innerText = '';
-    }else if(signAtEnd == '*'){
+    }else if(signAtEnd === '*'){
         currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) * Number(currentOperand.innerText)}`;
         prevOperand.innerText = '';
-    }else if(signAtEnd == '/'){
+    }else if(signAtEnd === '/'){
         currentOperand.innerText = `= ${Number(prevOperand.innerText.slice(0, -1)) / Number(currentOperand.innerText)}`;
         prevOperand.innerText = '';
     }else{ return }
