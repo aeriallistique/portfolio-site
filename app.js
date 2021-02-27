@@ -327,25 +327,6 @@ function doTheMath(){
     if(prevOperand.innerText == '')return 
     let signAtEnd = Array.from(prevOperand.innerText).pop();
 
-    //switch(signAtEnd){
-    //    case signAtEnd = '+':
-    //       currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) + Number(currentOperand.innerText)}`;
-    //       prevOperand.innerText = '';
-    //        break;
-    //    case signAtEnd = '-':
-    //       currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) - Number(currentOperand.innerText)}`;
-    //       prevOperand.innerText = '';
-    //        break;
-    //    case signAtEnd = '/':
-    //            currentOperand.innerText = `= ${Number(prevOperand.innerText.slice(0, -1)) / Number(currentOperand.innerText)}`;
-    //            prevOperand.innerText = '';
-    //             break;
-    //    case signAtEnd = '*':
-    //                currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) * Number(currentOperand.innerText)}`;
-    //                prevOperand.innerText = '';
-    //                 break;
-    //}
-
     if(signAtEnd === '+'){
         currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) + Number(currentOperand.innerText)}`;
         prevOperand.innerText = '';
