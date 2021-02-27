@@ -331,22 +331,22 @@ function doTheMath(){
         case signAtEnd = '+':
            currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) + Number(currentOperand.innerText)}`;
            prevOperand.innerText = '';
-           console.log(`plus`)
+           console.log(`plus`, signAtEnd)
             break;
         case signAtEnd = '-':
            currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) - Number(currentOperand.innerText)}`;
            prevOperand.innerText = '';
-           console.log(`minus`)
+           console.log(`minus`, signAtEnd)
             break;
         case signAtEnd = '/':
                 currentOperand.innerText = `= ${Number(prevOperand.innerText.slice(0, -1)) / Number(currentOperand.innerText)}`;
                 prevOperand.innerText = '';
-                console.log(`divide`)
+                console.log(`divide`, signAtEnd)
                  break;
         case signAtEnd = '*':
                     currentOperand.innerText =  `= ${Number(prevOperand.innerText.slice(0, -1)) * Number(currentOperand.innerText)}`;
                     prevOperand.innerText = '';
-                    console.log(`multiply`)
+                    console.log(`multiply`, signAtEnd)
                      break;
     }
 }
