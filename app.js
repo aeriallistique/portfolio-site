@@ -505,7 +505,8 @@ function startup() {
     evt.preventDefault();
     
     var el = document.getElementById("canvas");
-    drawing_content.classList.add('cursorOn')
+    drawing_content.classList.add('cursorOn');
+    drawing_content.classList.remove('cursorOff')
     wrapper.classList.add('cursorOff')
     wrapper.classList.remove('cursorOn')
 
