@@ -88,6 +88,7 @@ body{
     align-items: center;
     min-height: 80vh;
     height: auto;
+    border: 1px solid pink;
 }
 .about{
     width: 70%;
