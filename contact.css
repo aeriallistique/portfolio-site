@@ -86,7 +86,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    min-height: 80vh;
 }
 .about{
     width: 70%;
