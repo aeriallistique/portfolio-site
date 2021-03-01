@@ -81,12 +81,13 @@ body{
 
 /* ============ Main section ============= */
 .main{
-    margin-top: 6.5vw;
+    margin-top: 7.5vw;
     padding: 2rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
+    height: auto;
 }
 .about{
     width: 70%;
