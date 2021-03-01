@@ -14,7 +14,6 @@ body{
     font-family: 'Roboto Slab', serif;
     background: #f6f6f6;
     position: relative;
-    min-height: 100vh;
 }
 
 /* ....................header section..........  */
@@ -88,7 +87,7 @@ body{
     align-items: center;
     min-height: 80vh;
     height: auto;
-    border: 1px solid pink;
+    border: 1px solid green;
 }
 .about{
     width: 70%;
