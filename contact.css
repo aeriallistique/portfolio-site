@@ -208,4 +208,5 @@ body{
          width: 95%;
         border: 2px solid black;
     }
+    .about p{width: 100%;}
    }
