@@ -203,5 +203,7 @@ body{
         margin-top: 150px;
         }
 
-    .about{ width: 90%;}
+    .about{ width: 90%;
+        border: 2px solid pink;
+    }
    }
