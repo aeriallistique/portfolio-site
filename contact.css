@@ -192,5 +192,11 @@ body{
    
     footer{
        margin-top: 3rem;
-   }
+   }   
 }
+
+@media only screen and (max-width: 489px){
+    .main{
+        margin-top: 150px;
+        }
+   }
