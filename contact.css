@@ -85,9 +85,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 70vh;
     height: auto;
-    border: 1px solid red;
+    border: 1px solid blue;
 }
 .about{
     width: 70%;
