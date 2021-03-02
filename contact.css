@@ -3,6 +3,8 @@
     padding:0;
     box-sizing: border-box;
 }
+html{height:100%;}
+
 a{
     text-transform: uppercase;
     text-decoration: none;
@@ -14,6 +16,7 @@ body{
     font-family: 'Roboto Slab', serif;
     background: #f6f6f6;
     position: relative;
+    height: 100%;
 }
 
 /* ....................header section..........  */
@@ -141,6 +144,7 @@ body{
     padding:.4rem 2rem;
     background-color: white;
     display: inline-block;
+    margin-top: auto;
 }
 .footer p{
     text-align: left;
