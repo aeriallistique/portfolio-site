@@ -201,9 +201,10 @@ body{
 @media only screen and (max-width: 560px){
     .main{
         margin-top: 150px;
+        width: 100%;
         }
 
-    .about{ width: 90%;
-        border: 2px solid pink;
+    .about{ width: 95%;
+        border: 2px solid green;
     }
    }
