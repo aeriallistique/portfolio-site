@@ -9,6 +9,33 @@ body{
     background: rgb(37,246,140);
     background: linear-gradient(90deg, rgba(37,246,140,1) 0%, rgba(44,243,249,1) 100%);
     overflow-x: hidden;
+    position: relative;
+}
+
+.back-link{
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    position: absolute;
+    top: .5%;
+    left: .1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-link a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: .5rem;
+}
+.back-link span{opacity: 0;}
+
+.back-link a:hover{
+    font-weight: 600;
+}
+.back-link:hover span{
+    opacity: 1;
 }
 
 .wrapper{
