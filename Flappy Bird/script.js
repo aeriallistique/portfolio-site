@@ -64,7 +64,7 @@ cvs.addEventListener('click', function(e){
 			let clickY = e.clientY - rect.top;
 
 			//check if click happened on the btn
-			if(clickX >= startBtn.x && clickX <= startBtn.x + startBtn.w && clickY >= startBtn.y &&
+			if(clickX >= 0 && clickX <= cvs.width && clickY >= startBtn.y &&
 				clickY <= startBtn.y + startBtn.h){
 					pipes.reset();
 					bird.speedReset();
