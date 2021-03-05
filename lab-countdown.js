@@ -66,6 +66,7 @@ class Timer {
             this.startTimer();
             this.blockButtonsAfterStart(this.controls.clear, this.controls.start);
             this.unblockButtonsAfterPause(this.controls.pause, null);
+            this.fakeStartAudio();
         });
         this.controls.pause.addEventListener('click', () =>{ 
             this.clearInterval()
@@ -151,6 +152,12 @@ class Timer {
         this.controls.cock.src = "./countdown-img/Animated_Cockerel 2.gif?"+new Date().getTime();
         this.playAudio();
         this.makeRoosterCrowTwice();
+    }
+
+    fakeStartAudio(){
+        this.controls.x.play();
+        this.stopAudio();
+
     }
 
 }
