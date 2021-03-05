@@ -4,6 +4,14 @@
     box-sizing: border-box;
     font-family: 'Luckiest Guy', cursive;
 }
+
+.back-link{
+    margin: 1rem;
+}
+.back-link a{
+    text-decoration: none;
+}
+
 .container{
     width: 80vw;
     margin: 2rem auto;
