@@ -66,7 +66,7 @@ class Timer {
             this.startTimer();
             this.blockButtonsAfterStart(this.controls.clear, this.controls.start);
             this.unblockButtonsAfterPause(this.controls.pause, null);
-            this.fakeStartAudio();
+            this.fakeStartAudioForMobile();
         });
         this.controls.pause.addEventListener('click', () =>{ 
             this.clearInterval()
@@ -154,7 +154,7 @@ class Timer {
         this.makeRoosterCrowTwice();
     }
 
-    fakeStartAudio(){
+    fakeStartAudioForMobile(){
         this.controls.x.play();
         this.stopAudio();
 
