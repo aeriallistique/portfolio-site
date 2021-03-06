@@ -3,7 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
-html{height:100%;}
+html{height:100%;
+    width: 100vw;
+}
 
 a{
     text-transform: uppercase;
@@ -17,6 +19,7 @@ body{
     background: #f6f6f6;
     position: relative;
     height: 100%;
+    width: 100vw;
 }
 
 /* ....................header section..........  */
@@ -189,24 +192,18 @@ body{
 }
 
 @media only screen and (max-width: 375px){
-   .main{
-       margin-top: 6rem;
-   }
-   
-    footer{
-       margin-top: 3rem;
-   }   
+  
 }
 
 @media only screen and (max-width: 560px){
-    .main{
-        margin-top: 150px;
-        width: 100%;
-        min-width: 90vh;
-        }
-
-    .about{ margin-right: 1rem;
-         width: 95%;
+    .header{
+        position: static;
     }
-    .about p{width: 100%;}
+    .main{
+        margin-top: 0;
+    }
+    .about{
+        margin: 0;
+        width: 100%;
+    }
    }
