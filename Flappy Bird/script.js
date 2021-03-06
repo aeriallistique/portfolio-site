@@ -48,6 +48,7 @@ const startBtn = {
 
 //control the game
 cvs.addEventListener('click', function(e){
+	e.preventDefault();
 	switch(state.current){
 		case state.getReady:
 			state.current = state.game;
@@ -125,8 +126,7 @@ const bird={
 		{sX: 276, sY: 112},
 		{sX: 276, sY: 139},
 		{sX: 276, sY: 164},
-		{sX: 276, sY: 139}
-		
+		{sX: 276, sY: 139}	
 	],
 	x: 50,
 	y: 150,
