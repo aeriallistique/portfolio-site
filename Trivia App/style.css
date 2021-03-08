@@ -1,0 +1,146 @@
+.fa{
+    color:black;
+    transform: scale(1.2);
+    animation: rotate 2s linear infinite;
+    margin: 2rem;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background: rgb(212,224,111);
+background: linear-gradient(90deg, rgba(212,224,111,1) 0%, rgba(254,253,82,1) 100%);
+}
+
+label{
+    margin-bottom: 0 !important;
+}
+
+input::placeholder{
+    color: rgb(48, 166, 74);
+}
+input{
+    border: none;
+    border-bottom: 1px solid green;
+    padding: .2rem;
+}
+
+h5{
+    padding: 1rem;
+}
+
+h4{
+    margin-top: 1rem !important;
+}
+
+/*   HEADER    */
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-content: center;
+    margin: 2rem auto;
+}
+figure{
+    margin: 0 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_img{
+    width: 4rem;
+    margin-bottom: -3.5rem;
+}
+
+/*   DATE   CONTAINER    */
+.date_container, .year_container, .math_container, .trivia_container, .random_container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(237,244,186);
+background: linear-gradient(90deg, rgba(237,244,186,1) 0%, rgba(245,244,167,1) 100%);
+}
+
+.random_container{
+    margin-bottom: 1rem;
+}
+
+.date_and_fact{
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: .5rem 0;
+}
+.day_label, .month_label{
+    padding: .5rem;  
+    font-size: 1.4rem;
+}
+
+.month_select{
+    margin-right: .5rem;
+}
+.month_select, .day_select{
+    border: 1px solid rgb(48, 166, 74);
+    background-color: rgb(48, 166, 74);
+    color: white;
+    padding:.3rem;
+    border-radius: 4px;
+    outline: none;
+}
+
+#math, #trivia{
+    background: transparent;
+}
+
+/*   TRIVIA   CONTAINER    */
+
+.year_fact{
+    padding: .5rem;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.year_input{
+    width: 30%;
+    padding:.2rem;
+    border: none;
+    border-bottom: 1px solid green;
+    background-color: transparent;
+    background:transparent;
+}
+
+
+/*   RANDOM   CONTAINER    */
+
+.random_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.get_random_fact{
+    width: 10%;
+}
+
+@media only screen and (max-width: 475px){
+    *{
+        font-size: 12px;
+    }
+}
