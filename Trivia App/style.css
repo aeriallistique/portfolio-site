@@ -54,7 +54,22 @@ h4{
     flex-direction: row-reverse;
     align-content: center;
     margin: 2rem auto;
+    position: relative;
 }
+
+.back-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.back-link a{
+    text-decoration: none !important;
+    color: black!important;
+}
+.back-link:hover a, .back-link:hover span{
+    font-weight: 700;
+}
+
 figure{
     margin: 0 0 !important;
     display: flex;
