@@ -56,11 +56,9 @@ window.addEventListener('mousemove', function(event){
 })
 
 window.addEventListener('touchmove', (e)=>{
-    console.log(e.touches[0].clientX, e.touches[0].clientY)
     mouse.x = e.touches[0].clientX;
     mouse.y = e.touches[0].clientY;
-    document.getElementById('heading4').textContent = mouse.x;
-    document.getElementById('heading42').textContent = mouse.y;
+    
 })
 
 
