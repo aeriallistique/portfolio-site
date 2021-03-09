@@ -17,8 +17,10 @@ canvas{
 }
 .back-link, .back-link a, .back-link span{color: white;}
 .back-link{
+    width: auto;
     padding: 1rem;
 }
+.back-link a{text-decoration: none;}
 
 .form{
     position: absolute;
@@ -55,4 +57,14 @@ canvas{
     outline:none;
     cursor: pointer;
     font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 500px){
+    .form{
+        top: 3%;
+    }
+    .back-link{
+        width: 100px;
+        padding: .5rem;
+    }
 }
