@@ -46,7 +46,7 @@ window.addEventListener('touchmove', (e)=>{
 
     ctx.fillStyle = 'white';
     ctx.font = isWindowNarrow() ? '8px Verdana' : '15px Arial';
-    ctx.fillText(displayWord, 0 , 20);
+    ctx.fillText(displayWord, 0 , 30);
     const textCoordinates = ctx.getImageData(0,0, 100, 100);
 
 
