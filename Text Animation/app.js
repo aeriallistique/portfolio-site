@@ -56,7 +56,7 @@ window.addEventListener('mousemove', function(event){
 })
 
 window.addEventListener('touchmove', (e)=>{
-    console.log(e)
+    console.log(e.touches, e.touches[0])
     mouse.x = e.changedTouches.pageX;
     mouse.y = e.changedTouches.pageY;
     document.getElementById('heading4').textContent = mouse.x;
