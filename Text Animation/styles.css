@@ -61,7 +61,8 @@ canvas{
 
 @media only screen and (max-width: 500px){
     .form{
-        top: 3%;
+        top: 30px;
+        width: 80vw;
     }
     .back-link{
         width: 100px;
