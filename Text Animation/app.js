@@ -52,8 +52,12 @@ const but= {
 
 window.addEventListener('mousemove', function(event){
     mouse.x = event.x;
-    mouse.y = event.y;
-    
+    mouse.y = event.y; 
+})
+
+window.addEventListener('touchmove', (e)=>{
+    mouse.x = e.changedTouches.pageX;
+    mouse.y = e.changedTouches.pageY;
 })
 
 
