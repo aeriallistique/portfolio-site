@@ -2,14 +2,13 @@
 const input = document.getElementById('input');
 const btn = document.getElementById('btn');
 
-btn.addEventListener('click', ()=>{
-    let displayWord = 'Andi'
-
+btn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    let displayWord = 'Andi';
     if(input.value === '' || input.value === null)return
     displayWord = input.value;
+    input.value = '';
     
-
-
 const canvas= document.getElementById('canvas1')
 const ctx = canvas.getContext('2d')
 canvas.width = window.innerWidth
@@ -27,29 +26,6 @@ const mouse = {
     radius: 150
 }
 
-const but= {
-    buttonX: 40,
-    buttonY: 40,
-    buttonH: 30,
-    buttonW: 90
-}
-
-//function drawBtn(){
-//    ctx.beginPath();
-//    ctx.rect(but.buttonX, but.buttonY, but.buttonW, but.buttonH);
-//    ctx.stroke();
-//    ctx.fillStyle = 'blue';
-//    ctx.fill();
-//
-//    ctx.fillStyle='red'
-//    ctx.font = "18px Verdana";
-//    ctx.fillText('Button', but.buttonX + 15, but.buttonY + 20)
-//
-//}
-
-
-
-
 window.addEventListener('mousemove', function(event){
     mouse.x = event.x;
     mouse.y = event.y; 
@@ -61,9 +37,15 @@ window.addEventListener('touchmove', (e)=>{
     
 })
 
+    let valueForMobile = 20;
+
+    const isWindowNarrow = ()=>{
+        valueForMobile = 10;
+        return window.innerWidth < 575;
+    };
 
     ctx.fillStyle = 'white';
-    ctx.font = '15px Verdana';
+    ctx.font = isWindowNarrow() ? '8px Verdana' : '15px Arial';
     ctx.fillText(displayWord, 0 , 20);
     const textCoordinates = ctx.getImageData(0,0, 100, 100);
 
@@ -124,7 +106,7 @@ function init(){
             if(textCoordinates.data[(y * 4 * textCoordinates.width) + (x * 4) + 3] > 128){
                 let positionX = x + adjustX;
                 let positionY = y + adjustY;
-                particleArray.push(new Particle(positionX * 20, positionY * 20));
+                particleArray.push(new Particle(positionX * valueForMobile, positionY * valueForMobile));
             }
         }
     }
@@ -151,8 +133,8 @@ function connect(){
             let dy = particleArray[a].y - particleArray[b].y;
             let distance = Math.sqrt(dx * dx + dy * dy);
 
-            if( distance < 40){
-                opacityValue = 1 - (distance/40);
+            if( distance < valueForMobile * 2){
+                opacityValue = 1 - (distance/(valueForMobile * 2));
                 ctx.strokeStyle = 'rgba(255, 255, 255,'+ opacityValue + ')';
                 ctx.lineWidth = 1;
                 ctx.beginPath();
