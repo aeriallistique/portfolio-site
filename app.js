@@ -31,8 +31,6 @@ const main4ImgArray = main4.querySelectorAll('img')
 const main1ImgArray = main1.querySelectorAll('img')
 
 
-
-
 const canvas = document.getElementById('canvas');
 const drawing_content = main3.querySelector('.drawing_content')
 const side = document.querySelector('.side');
@@ -98,7 +96,7 @@ main4_ham_btn.addEventListener('click', ()=>{
 
 main1.querySelectorAll('a').forEach(link =>{
     link.addEventListener('click', (e)=>{
-        e.preventDefault()
+        if(!e.target.classList === 'lab-experiment'){e.preventDefault()} 
         link.className === 'main1Link1' ? main1.classList.add('slideup') : '';
         if(link.className === 'main1Link2' ) {
             main1.classList.add('slideup');
