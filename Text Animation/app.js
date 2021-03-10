@@ -106,7 +106,7 @@ function init(){
             if(textCoordinates.data[(y * 4 * textCoordinates.width) + (x * 4) + 3] > 128){
                 let positionX = x + adjustX;
                 let positionY = y + adjustY;
-                particleArray.push(new Particle(positionX * valueForMobile, positionY * valueForMobile));
+                particleArray.push(new Particle(positionX * (valueForMobile * 1.5), positionY * (valueForMobile * 1.5)));
             }
         }
     }
