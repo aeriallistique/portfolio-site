@@ -615,7 +615,7 @@ transition: .8s ease-in-out;
     .main4{height: calc(100vh - 11vh);
     
     border: 1px solid red;}
-    .main1{height:calc(100vh - 13vh);
+    .main1{height:calc(100vh - 9vh);
         
     }
 }
