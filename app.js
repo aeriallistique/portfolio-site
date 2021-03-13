@@ -476,8 +476,6 @@ function startup() {
     side.classList.remove('cursorOn')
     side.classList.add('cursorOff')
     
-    var colorChoice = colors[Math.floor(Math.random()* colors.length)];//colorForTouch();
-
     var ctx = el.getContext("2d");
     var touches = evt.changedTouches;
 
