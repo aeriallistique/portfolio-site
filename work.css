@@ -613,8 +613,8 @@ transition: .8s ease-in-out;
     .ul li a{font-size: 4vw;}
 
     .main4{height: calc(100vh - 11vh);
-    
-    border: 1px solid red;}
+        
+    }
     .main1{height:calc(100vh - 9vh);
         
     }
