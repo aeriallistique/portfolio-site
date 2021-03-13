@@ -179,6 +179,10 @@ main1.addEventListener('mousemove', (e)=>{ makeCarousel(e, main1, main1ImgArray)
 
 //scrolling event
 
+window.addEventListener('touchmove', (e)=>{
+    console.log(e)
+} )
+
 const isBrowser = ()=>{
     let usrA = window.navigator.userAgent;
     let saf = usrA.indexOf('Safari')
