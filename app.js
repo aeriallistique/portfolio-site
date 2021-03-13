@@ -366,7 +366,6 @@ function resetCanvas(){
         side.classList.add('cursorOff')
         wrapper.classList.remove('cursorOn')
         wrapper.classList.add('cursorOff')
-        color = colors[Math.floor(Math.random()* colors.length)] ;
         onScreenResize()
     }, 500)  }
 
@@ -437,7 +436,7 @@ function startup() {
   document.addEventListener("DOMContentLoaded", startup);
 
   var ongoingTouches = [];
-  var colorChoice = color;//colorForTouch();
+  var colorChoice = colors[Math.floor(Math.random()* colors.length)];//colorForTouch();
 
   function handleStart(evt) {
     evt.preventDefault();
