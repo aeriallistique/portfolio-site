@@ -531,7 +531,7 @@ transition: .8s ease-in-out;
     .buttons_area {height: 50px;}
 
     .hamburgerToTop{
-        transform: translateY(calc(11vh + 40px - 100vh))!important;}
+        transform: translateY(calc(11vh + 59px - 100vh))!important;}
 
     .pop_up_from_hamburger_utility{
         height: calc(100vh - 11vh - 37px)!important;}
