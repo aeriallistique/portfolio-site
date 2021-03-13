@@ -436,7 +436,7 @@ function startup() {
   document.addEventListener("DOMContentLoaded", startup);
 
   var ongoingTouches = [];
-  var colorChoice = colors[Math.floor(Math.random()* colors.length)];//colorForTouch();
+  var colorChoice = color;//colorForTouch();
 
   function handleStart(evt) {
     evt.preventDefault();
@@ -476,8 +476,11 @@ function startup() {
     side.classList.remove('cursorOn')
     side.classList.add('cursorOff')
     
+    var colorChoice = colors[Math.floor(Math.random()* colors.length)];//colorForTouch();
+
     var ctx = el.getContext("2d");
     var touches = evt.changedTouches;
+
   
     for (var i = 0; i < touches.length; i++) {
       
