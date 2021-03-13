@@ -44,7 +44,7 @@ let color = colors[Math.floor(Math.random()* colors.length)] ;
 
 // CHEVRON BUTTONS CLICK EVENTS
 arrayofButtons.forEach(btn =>{
-    if(document.body.clientWidth < 500 ) retun;
+
     btn.addEventListener('click', (e)=>{
         let ev = e.target.classList
         if(ev.contains('main2BtnDown')){
