@@ -366,6 +366,7 @@ function resetCanvas(){
         side.classList.add('cursorOff')
         wrapper.classList.remove('cursorOn')
         wrapper.classList.add('cursorOff')
+        color = colors[Math.floor(Math.random()* colors.length)] ;
         onScreenResize()
     }, 500)  }
 
