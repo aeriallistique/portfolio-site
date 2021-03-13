@@ -487,7 +487,7 @@ function startup() {
         ctx.beginPath();
         ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY-90);
         ctx.lineTo(touches[i].pageX, touches[i].pageY-90);
-        ctx.lineWidth = 12;
+        ctx.lineWidth = 35;
         ctx.lineCap = 'round'
         ctx.strokeStyle = colorChoice;
         ctx.stroke();
