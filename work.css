@@ -612,9 +612,9 @@ transition: .8s ease-in-out;
     .ul li{padding:0 .5rem;}
     .ul li a{font-size: 4vw;}
 
-    .main4{height: calc(100vh - 11vh - 20px);
+    .main4, .main1{height: calc(100vh - 11vh);
     
-    border: 1px solid blue;}
+    border: 1px solid green;}
 }
 
 /* =============MEDIA QUERIES FOR MOBILE ==============*/
