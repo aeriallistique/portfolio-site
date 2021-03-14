@@ -612,9 +612,9 @@ transition: .8s ease-in-out;
     .ul li{padding:0 .5rem;}
     .ul li a{font-size: 4vw;}
 
-    .main4{height: calc(100vh - 11vh);
-        
+    .main4{height: calc(100vh - 11vh);    
     }
+    .main1{ height: calc(100vh - 13vh); }
     
 }
 
