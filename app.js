@@ -41,7 +41,6 @@ const arrayofButtons = [main1DownBtn, main2BtnDown, main2BtnUp, main3BtnDown, ma
 let colors = ['#0652DD', '#EE5A24', '#6F1E51', '#006266', '#2C3A47', '#82589F', '#20bf6b', '#eb3b5a'];
 let color = colors[Math.floor(Math.random()* colors.length)] ;
 
-document.addEventListener('click', (e)=>{console.log(e.target)})
 
 // CHEVRON BUTTONS CLICK EVENTS
 arrayofButtons.forEach(btn =>{
