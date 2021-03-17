@@ -1,0 +1,142 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5rem;
+}
+.cell{
+    width: 10vw;
+    height: 10vw;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3){border-top: none;}
+
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7){border-left: none;}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9){border-bottom: none;}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9){border-right: none;}
+
+.grid.classX .cell:not(.classX):not(.classC):hover:before,
+ .grid.classX .cell:not(.classX):not(.classC):hover:after,
+ .grid.classC .cell:not(.classX):not(.classC):hover:before{
+     background-color: lightgray!important;
+ }
+
+.cell.classX:hover,
+.cell.classC:hover{cursor: not-allowed;}
+
+
+.cell.classX::before,
+ .cell.classX::after,
+ .grid.classX .cell:not(.classX):not(.classC):hover:before,
+ .grid.classX .cell:not(.classX):not(.classC):hover:after{
+    content: '';
+    height: 90%;
+    width: 10%;
+    position: absolute;
+    background-color:black;
+    transform-origin: center;
+    border-radius: 5px;
+    
+}
+
+
+
+.cell.classX::before,
+.grid.classX .cell:not(.classX):not(.classC):hover:before{
+    transform: rotate(45deg)}
+
+.cell.classX::after,
+ .grid.classX .cell:not(.classX):not(.classC):hover:after{
+     transform: rotate(-45deg)}
+
+
+
+.cell.classC::before,
+.cell.classC::after,
+.grid.classC .cell:not(.classX):not(.classC):hover:before,
+.grid.classC .cell:not(.classX):not(.classC):hover:after{
+    content: '';
+    border-radius: 50%;
+    background-color:black ;
+    position: absolute;
+}
+.cell.classC::before,
+.grid.classC .cell:not(.classX):not(.classC):hover:before{
+    height: 75%;
+    width: 75%;
+}
+.cell.classC::after,
+.grid.classC .cell:not(.classX):not(.classC):hover:after{
+    height: 55%;
+    width: 55%;
+    background-color: white;
+}
+
+
+.modal{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(19, 17, 17, 1);
+    z-index: 9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.btn{
+    cursor: pointer;
+    padding:.5rem .8rem;
+    width: 120px;
+    border: none;
+    outline: transparent;
+    background-color: white;
+    font-size: 1.5rem;
+}
+.btn:hover{
+    background-color: lightgray;
+    color: white;
+}
+.header{
+    font-size: 3rem;
+}
+
+
+/* utility classes  */
+
+.show{
+    display: flex;
+}
