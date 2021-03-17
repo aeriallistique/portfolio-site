@@ -11,6 +11,21 @@ body{
     position: relative;
 }
 
+.back-link{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+}
+.back-link a{
+    text-decoration:none;
+    color: black;
+}
+.back-link:hover.back-link span,
+.back-link:hover.back-link a{ font-weight: 600;}
+
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
