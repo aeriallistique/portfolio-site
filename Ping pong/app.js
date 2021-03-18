@@ -3,17 +3,15 @@ const ctx = cvs.getContext("2d");
 const smallBtn = document.getElementById('small');
 const start = document.getElementById('start')
 
-const checkWidth = ()=>{
-    if(window.width > 700)return;
+const checkBrowserWidth = ()=>{
+    if(window.outerWidth > 700)return;
     else{
-        cvs.width = window.width - 20;
+        cvs.width = window.outerWidth - 60;
         cvs.height = (cvs.width / 2) + 50;
+        return cvs.width, cvs.height;
     }
 }
-
-window.addEventListener('load', ()=>{
-    checkWidth()
-})
+checkBrowserWidth()
 
 //create user paddle
 
@@ -122,8 +120,6 @@ document.addEventListener('keydown',(e)=>{
         user.y += 20;
     }
 })
-
-
 
 //collistion detection
 function collision(b,p){
