@@ -118,7 +118,7 @@ function movePaddle(e){
 //touchmove event listener
 cvs.addEventListener('touchmove', handleTouchMove);
 
-const handleTouchMove = (e)=>{
+function handleTouchMove(e){
     let rect = cvs.getBoundingClientRect();
     user.y = e.touches[0].clientY - rect.top - user.height/2;
 }
