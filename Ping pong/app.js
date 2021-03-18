@@ -4,6 +4,7 @@ const smallBtn = document.getElementById('small');
 const start = document.getElementById('start')
 
 let textFont = '45px fantasy';
+const framePerSecond = 50;
 
 const checkBrowserWidth = ()=>{
     if(window.outerWidth > 700)return;
@@ -223,8 +224,9 @@ function game(){
     render();
 }
 
+
 start.addEventListener('click', ()=>{
-    const framePerSecond = 50;
+   
     setInterval(game, 1000/framePerSecond)
 })
 
