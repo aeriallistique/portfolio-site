@@ -120,7 +120,7 @@ cvs.addEventListener('touchmove', handleTouchMove);
 
 function handleTouchMove(e){
     let rect = cvs.getBoundingClientRect();
-    user.y = e.touches[0].clientY - rect.top - user.height/2;
+    user.y = e.touches[0].clientY - rect.top - user.height/2 - 40;
 }
 
 document.addEventListener('keydown',(e)=>{
