@@ -3,6 +3,18 @@ const ctx = cvs.getContext("2d");
 const smallBtn = document.getElementById('small');
 const start = document.getElementById('start')
 
+const checkWidth = ()=>{
+    if(window.width > 700)return;
+    else{
+        cvs.width = window.width - 20;
+        cvs.height = (cvs.width / 2) + 50;
+    }
+}
+
+window.addEventListener('load', ()=>{
+    checkWidth()
+})
+
 //create user paddle
 
 const user={
@@ -208,5 +220,4 @@ start.addEventListener('click', ()=>{
     const framePerSecond = 50;
     setInterval(game, 1000/framePerSecond)
 })
-
 
