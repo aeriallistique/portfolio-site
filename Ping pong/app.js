@@ -115,6 +115,14 @@ function movePaddle(e){
     user.y = e.clientY - rect.top - user.height/2;
 }
 
+//touchmove event listener
+cvs.addEventListener('touchmove', handleTouchMove);
+
+const handleTouchMove = (e)=>{
+    let rect = cvs.getBoundingClientRect();
+    user.y = e.touches[0].clientY - rect.top - user.height/2;
+}
+
 document.addEventListener('keydown',(e)=>{
     if(e.keyCode == '38'){
          user.y = user.y - 20;
