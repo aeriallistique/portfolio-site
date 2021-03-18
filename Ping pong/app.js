@@ -3,12 +3,14 @@ const ctx = cvs.getContext("2d");
 const smallBtn = document.getElementById('small');
 const start = document.getElementById('start')
 
+let textFont = '45px fantasy';
+
 const checkBrowserWidth = ()=>{
     if(window.outerWidth > 700)return;
     else{
         cvs.width = window.outerWidth - 60;
         cvs.height = (cvs.width / 2) + 50;
-        return cvs.width, cvs.height;
+        textFont = '20px fantasy';
     }
 }
 checkBrowserWidth()
@@ -82,7 +84,7 @@ function drawCircle(x,y,r,color){
 //DRAW TEXT
 function drawText(text, x,y,color){
     ctx.fillStyle = color;
-    ctx.font = "45px fantasy";
+    ctx.font = textFont;
     ctx.fillText(text, x, y);
 }
 
@@ -96,7 +98,7 @@ function render(){
 
     //draw score
     drawText(user.score, cvs.width/4, cvs.height/5, "white");
-    drawText(com.score, 3* cvs.width/4, cvs.height/5, "white");
+    drawText(com.score, 2.80*(cvs.width/4), cvs.height/5, "white");
 
     //draw paddles
     drawRect(user.x, user.y, user.width, user.height, user.color);
