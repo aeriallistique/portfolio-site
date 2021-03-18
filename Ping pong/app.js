@@ -119,6 +119,7 @@ function movePaddle(e){
 cvs.addEventListener('touchmove', handleTouchMove);
 
 function handleTouchMove(e){
+    e.preventDefault();
     let rect = cvs.getBoundingClientRect();
     user.y = e.touches[0].clientY - rect.top - user.height/2 - 55;
 }
