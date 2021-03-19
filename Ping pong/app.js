@@ -221,7 +221,7 @@
 
     //game init
     function game(){
-        if(user.score === 2 || com.score === 2){
+        if(user.score === 5 || com.score === 5){
             showOrHideBtn(hiddenOrVisible = true, start);        
         }else{
             update();
