@@ -123,7 +123,7 @@
     function handleTouchMove(e){
         e.preventDefault();
         let rect = cvs.getBoundingClientRect();
-        user.y = e.touches[0].clientY - rect.top - user.height/2 - 55;
+        user.y = e.touches[0].clientY - rect.top - user.height/2 - 85;
     }
 
     document.addEventListener('keydown',(e)=>{
@@ -222,9 +222,7 @@
     //game init
     function game(){
         if(user.score === 2 || com.score === 2){
-            showOrHideBtn(hiddenOrVisible = true, start);
-            //showOrHideBtn(hiddenOrVisible = false, smallBtn);
-            
+            showOrHideBtn(hiddenOrVisible = true, start);        
         }else{
             update();
             render();
