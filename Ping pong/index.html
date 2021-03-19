@@ -6,24 +6,47 @@
     <title>ping pong</title>
     <style>
         body{
-        
-            
             padding:0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-family: fantasy;
         }
-        #small{
+        .start{margin-bottom: 1.5rem;}
+        .small{
+            opacity: .4;
+            pointer-events: none;
+        }
+        button{
+            padding: .5rem 1rem;
+            background: lightgray;
+            border:none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: all .1s ease-in;
+        }
+        button:last-of-type{
             margin-top: 30px;
+        }
+        button:hover{
+            background: rgb(77, 76, 76);
+            color: rgb(213, 209, 209);
+            transform: scaleX(1.05);
+        }
+
+        .showBtn{
+            opacity: 1;
+            pointer-events: all;
         }
     </style>
 </head>
 <body>
 
-    <button id="start">Start Game</button>
+    <button id="start" class="start showBtn">Start Game</button>
     <canvas id="pong" width="700" height="400" ></canvas>
-    <button id="small">Small Paddles</button>
+    <button id="small" class="small">Small Paddles</button>
 
     <script src="app.js"></script>
 </body>
