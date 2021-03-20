@@ -372,7 +372,10 @@ figure{
         right:50%;
         transform: translateX(50%);
     }
-
+    .modal{
+        width: 80%;
+        height: 80%;
+    }
 }
 
 
