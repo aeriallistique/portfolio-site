@@ -244,7 +244,7 @@
 
     start.addEventListener('click', ()=>{
         let intervalId = setInterval(game, 1000/framePerSecond);
-        if(user.score===2 || com.score===2){
+        if(user.score===5 || com.score===5){
             clearInterval(intervalId);
             user.score = 0;
             com.score = 0;
