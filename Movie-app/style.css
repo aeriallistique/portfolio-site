@@ -367,6 +367,12 @@ figure{
     #wrapper{margin: .5rem;}
     .home, #form{width: 50%;}
 
+    .close{
+        top: -40px;
+        right:50%;
+        transform: translateX(50%);
+    }
+
 }
 
 
@@ -382,9 +388,5 @@ figure{
     }
     
 
-    .close{
-        top: -40px;
-        right:50%;
-        transform: translateX(50%);
-    }
+    
 }
