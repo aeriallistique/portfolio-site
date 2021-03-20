@@ -13,6 +13,9 @@ const overlay = document.querySelector('.overlay');
 const homeLink = document.querySelector('.home_link');
 let pageNumber = 0;
 
+input.addEventListener('focus', ()=> input.placeholder = '')
+
+
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
     let term = input.value;
@@ -26,6 +29,7 @@ homeLink.addEventListener('click', (e)=>{
     wrapper.innerHTML = '';
     getMovie();
 });
+
 
 page.addEventListener('click', (e)=>{
     if(e.target.id === 'next'){
