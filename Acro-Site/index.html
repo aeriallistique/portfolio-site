@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Aeriallistique</title>
+</head>
+<body>
+    <div class="overlay display-none" id="modal">
+      <div class="modal-display" id="modal-display"></div>
+    </div>
+    <header>
+       <p>aeriallistique</p>  <button id="headerBtn"><span>&#8744;</span></button>
+        <nav id="nav">
+            <li><a href="#" class="first">photos</a></li>
+            <li><a href="#" class="second">videos</a></li>
+            <li><a href="#" class="third">training</a></li>
+            <li><a href="#" class="fourth">cv</a></li>
+            <li><a href="#" class="fifth">contact</a></li>
+        </nav>
+    </header>
+    
+
+    <section class="about-section">
+        <div class="top-div">
+            <div class="logo-image">
+                <figure><img src="./mici/teeth.jpg" alt="Andi teeth hanging">
+                </figure>
+            </div>
+
+            <div class="body_info">
+                <!--  imperial measurements  -->
+                <div class="imperial" id="imperial">
+                    <div class="height">
+                        <div class="number">5ft10</div>
+                        <div class="description">Height</div>
+                    </div>
+                    <div class="weight">
+                        <div class="number">160lbs</div>
+                        <div class="description">Weight</div>
+                    </div>
+                </div>
+                <!--  metric measurements  -->
+                <div class="metric display-none" id="metric">
+                    <div class="height">
+                        <div class="number">177cm</div>
+                        <div class="description">Height</div>
+                    </div>
+                    <div class="weight">
+                        <div class="number">73kg</div>
+                        <div class="description">Weight</div>
+                    </div>
+                </div>
+                <div class="switch-option" id="switch-option">
+                    <label for="choose_measurement" id="switch-label">cm/kg</label>
+                    <input type="checkbox" id="choose_measurement" class="choose-measurement">
+                </div>
+            </div>
+        </div>
+        <div class="bottom-div">
+            <div class="description">
+                <div class="name-job">
+                    <div class="name">Andi</div>
+                    <div class="job">Artist</div>
+                </div>
+                <div class="more-info">
+                    <span class="circus-tent">&#127914;</span> Aerialist / Hand Balancer <span class="handstand">&#129336; &#127942;</span></div>
+                <div class="moto">I make money being upsidedown. <br>       
+                     Made in <a href="https://www.google.co.uk/maps/place/Bra%C8%99ov,+Romania/@45.6426802,25.5887252,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNuIW67IYnrbNWJAFBHxj5-N5AYBUkHRaObkuH5!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNuIW67IYnrbNWJAFBHxj5-N5AYBUkHRaObkuH5%3Dw86-h114-k-no!7i3456!8i4608!4m5!3m4!1s0x40b35b862aa214f1:0x6cf5f2ef54391e0f!8m2!3d45.6426802!4d25.5887252" class="brasov">Brasov &#127479;&#127476;</a>, formed across the <span class="globe">&#127757;</span>, found in <a href="https://www.google.co.uk/maps/place/Manchester/@53.472225,-2.293502,12z/data=!3m1!4b1!4m5!3m4!1s0x487a4d4c5226f5db:0xd9be143804fe6baa!8m2!3d53.4807593!4d-2.2426305" class="manchester">Manchester &#127468;&#127463;</a>
+                </div>
+                <div class="socials">
+                    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons -->
+                    <a href="https://www.instagram.com/aeriallistique/" class="fa fa-instagram hovering" title="Instagram"></a>
+                    <a href="https://www.youtube.com/channel/UCaEL0Hv2nDDVGRcYGXKrwXg" class="fa fa-youtube hovering" title="Youtube"></a>
+                    <a href="https://vimeo.com/user8698933" class="fa fa-vimeo hovering" title="Vimeo"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="highlights">
+            <span> Highlights </span>
+            <div class="button-container">
+                <button id="photos-btn" title="Photos"><span class="material-icons">
+                    local_see
+                    </span>
+                </button>
+                <button id="videos-btn" title="Videos"><span class="material-icons">
+                    videocam
+                    </span>
+                </button>
+                <button id="training-btn" title="Training videos"><span class="material-icons">
+                    subscriptions
+                    </span>
+                </button>
+                <button id="cv-btn" title="Curriculum Vitae"><span class="material-icons">
+                    contact_page
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="photos photos-btn">
+                    <div class="item"><img src="./mici/teeth.jpg" alt=""></div>
+                    <div class="item"><img src="./mici//teeth3.jpg" alt=""></div>
+                    <div class="item"><img src="./mici//teeth1.jpg" alt=""></div>
+                    <div class="item"><img src="./mici//straps1.jpg" alt=""></div>
+                    <div class="item"><img src="./mici//standing.jpg" alt=""></div>
+                    <div class="item"><img src="./mici//shoe-off.jpg" alt=""></div>
+                    <div class="item"><img src="./mici//pre-trousers.jpg" alt=""></div>
+                    <div class="item"><img src="./mici//meathook.jpg" alt=""></div>
+                    <div class="item"><img src="./mici//half-flag.jpg" alt=""></div>
+                    <div class="item"><img src="./mici//blindhs.jpg" alt=""></div>
+                    <div class="item"><img src="./mici//cross.jpg" alt=""></div>
+                    <div class="item"><img src="./mici//half-figa.jpg" alt=""></div>
+                    <div class="white-space-instead-of-margin"></div>
+            </div>
+            <div class="videos display-none videos-btn">
+                    <div class="item"> <img src="./Videos Resource/demo-img.png" alt="">  </div>
+                    <div class="item"> <img src="./Videos Resource/straps-teatro.png" alt="">  </div>
+                    <div class="item"> <img src="./Videos Resource/hs-strip-combi.png" alt="">  </div>
+                    <div class="item"> <img src="./Videos Resource/duo-aerial-china.png" alt="">  </div>
+                    <div class="item"> <img src="./Videos Resource/hs-teatro.png" alt="">  </div>
+                    <div class="item"> <img src="./Videos Resource/strip-hs-cloud.png" alt="">  </div>
+                    <div class="item"> <img src="./Videos Resource/straps-scotland.png" alt="">  </div>
+                    <div class="item"> <img src="./Videos Resource/duo-aerial-oasis.png" alt="">  </div>
+                    <div class="item"> <img src="./Videos Resource/tall-canes.png" alt="">  </div>
+                    <div class="white-space-instead-of-margin"></div>
+            </div>
+            <div class="training display-none training-btn">
+                    <div class="item"><img src="./Training resources/hand-balancing-at-home.png" alt=""></div>
+                    <div class="item"><img src="./Training resources/hand-balancing-flow.png" alt=""></div>
+                    <div class="item"><img src="./Training resources/hand-balancing-outdoors.png" alt=""></div>
+                    <div class="item"><img src="./Training resources/hand-stand-on-rotating-table.png" alt=""></div>
+                    <div class="item"><img src="./Training resources/improv-to-music.png" alt=""></div>
+                    <div class="item"><img src="./Training resources/juggling-5-ball.png" alt=""></div>
+                    <div class="item"><img src="./Training resources/one-arm-combo.png" alt=""></div>
+                    <div class="item"><img src="./Training resources/straps-training.png" alt=""></div>
+                    <div class="item"><img src="./Training resources/straps-flow.png" alt=""></div>  
+                    <div class="white-space-instead-of-margin"></div> 
+            </div>
+            <div class="cv display-none cv-btn">
+                    <div class="item"><h3>Professional Experience</h3></div>
+                    <div class="item"><p>&#8594; October 2020 - 'Scare City' drive in cinema, Manchester, UK</p></div>
+                    <div class="item"><p>&#8594; December 2020 - 'Christmas City' drive in cinema, Manchester, UK</p></div>
+                    <div class="item"><p>&#8594; July 2019 – January 2020 Chimelong Dragon Show, Zhuhai, China.</p></div>
+                    <div class="item"><p>&#8594; July 2017 – July 2019 – Menagerie Restaurant, Manchester UK</p></div>
+                    <div class="item"><p>&#8594; March 2019 - GravityLive “Tire Technology Expo” Hannover, Germany.</p></div>
+                    <div class="item"><p>&#8594; Feb 2019 - Black Birdcage Ent. Private Party, Amsterdam , Holland.</p></div>
+                    <div class="item"><p>&#8594; January – February 2019 Big Burns Supper Festival “Le Haggis”, Scotland.</p></div>
+                    <div class="item"><p>&#8594; November 2018 – “World Motorsport Congress”, Cologne, Germany.</p></div>
+                    <div class="item"><p>&#8594; September 2018 – “NYX Make-up Corporate Gala, Manchester, UK</p></div>
+                    <div class="item"><p>&#8594; January 2018 – World Ski Cup, Zagreb, Croatia.</p></div>
+                    <div class="item"><p>&#8594; December 2017 – GravityLive Christmas Production, Manchester UK.
+                    </p></div>
+                    <div class="item"><p>&#8594; June 2017 - "IBM Incentive Party”, Cannes, France</p></div>
+                    <div class="item"><p>&#8594; October 2016 – May 2017 <b>Schuhbecks Teatro, Munich</b>, Germany</p></div>
+                    <div class="item"><p>&#8594; July 2016 – “Lio” Ibiza, Spain.</p></div>
+                    <div class="item"><p>&#8594; July 2016 – GravityLive, Corporate Event, London UK.</p></div>
+                    <div class="item"><p>&#8594; May 2016 – Evolve Entertainment, Corporate Event, Istanbul Turkey.</p></div>
+                    <div class="item"><p>&#8594; March – April 2016 – “Pirates Live Easter Spectacular” at the Hippodrome, Gt Yarmouth</p></div>
+                    <div class="item"><p>&#8594; February 2016 – ArtVision Productions – World Mobile Convention, Barcelona.</p></div>
+                    <div class="item"><p>&#8594; January-February 2016 - Schuhbeck Teatro, Munich, Germany.</p></div>
+                    <div class="item"><p>&#8594; December 2015 - GravityLive, BestPartiesEver Christmas Production, Old Trafford, Manchester, UK.</p></div>
+                    <div class="item"><p>&#8594; May 2015 - November 2015 Royal Caribbean Productions, “In the Air”
+                        on board Royal Caribbean Cruises, <b> Liberty of the Seas</b>.</p></div>
+                    <div class="item"><p>&#8594; May 2014 - December 2014 Royal Caribbean Productions, “In The Air”
+                        on board Royal Caribbean Cruises, <b> Liberty of the Seas</b>.</p></div>
+                    <div class="item"><p>&#8594; April 2014 - May 2014 “Pirates Live Easter Spectacular”
+                        The Hippodrome Circus Theatre, Great Yarmouth, UK.</p></div>
+                    <div class="item"><p>&#8594; August 2013 - March 2014 - Royal Caribbean Productions, “Come Fly with Me”
+                        on board Royal Caribbean Cruises,  <b> Oasis of the Seas</b>.</p></div>
+                    <div class="item"><p>&#8594; November 2012 - May 2013 - “WEP Productions”
+                        South American season on board Ibero Cruises MV Grand Holiday.</p></div>
+                    <div class="item"><p>&#8594; October 29th 2012 - “Acrobat Productions” Promotional Event for Las Vegas Travel Authority, Gatwick Airport, UK.
+                    </p></div>
+                    <div class="item"><p>&#8594; October 18th 2012 - “Acrobat Productions” Gala Dinner
+                        for Las Vegas Travel Authority, Brighton, UK.</p></div>
+                    <div class="item"><p>&#8594; April 2012 - October 2012 - “WEP Productions” Mediterranean Cruises on board of MSC Orchestra.</p></div>
+                    <div class="item"><p>&#8594; May 2010 - June 2011 - “Camus The Art of
+                        Entertainment”, World Cruise on board of MSC Poesia.</p></div>
+                    <div class="item"><p>&#8594; November 2009 - April 2010 - “Camus The Art of
+                        Entertainment”, South American season on board MSC Armonia.</p></div>
+                    <div class="item"><p>&#8594; May 2008 – September 2009 - “Royal Productions”
+                        Tournament of Kings at Excalibur Hotel and
+                        Casino Las Vegas, Nevada.</p></div>
+                    <div class="item"><p>&#8594; January 2008 - March 2008 - “Snickers Charged”
+                        USA, Antigravity Tour. NCAA Basketball half time show.</p></div>
+                    <div class="item"><p>&#8594; July 5-7th 2008 - “Choice Hotels” National convention at
+                        Mandalay Bay Hotel and Casino, Las Vegas, Nevada.</p></div>
+                    <div class="item"><p>&#8594; January 17th 2008 - “Antigravity” AIRBUS ACJ 318, 319,
+                        320 new corporate aircraft models presentation gala. Orlando, Florida.</p></div>
+                       
+                    <div class="white-space-instead-of-margin"></div>
+            </div>
+        </div>
+       
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
