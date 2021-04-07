@@ -1,5 +1,6 @@
 const $ = (q)=> document.getElementById(q);
 const $$ = (q)=> document.querySelector(q);
+
 const headerBtn = $('headerBtn');
 const nav = $('nav');
 const modal = $('modal');
@@ -16,14 +17,26 @@ $$('.main-container .training'), $$('.main-container .cv')]
 
 // anchor tags handle function 
 function handleNavLinks(e){
-    let target = e.target.classList.valuel;
-    if(target === 'first'){}
-    if(target === 'first'){}
-    if(target === 'first'){}
-    if(target === 'first'){}
-    
+    let target = e.target.classList.value;
+    removeModal();
+    mainContainerDivs.forEach(div=> div.classList.add('display-none'));
+    scrollIntoView($$('.highlights'))
+    if(target === 'first'){ mainContainerDivs[0].classList.remove('display-none')}
+    if(target === 'second'){mainContainerDivs[1].classList.remove('display-none')}
+    if(target === 'third'){mainContainerDivs[2].classList.remove('display-none')}
+    if(target === 'fourth'){mainContainerDivs[3].classList.remove('display-none')}
+    if(target === 'fifth'){}
+
 }
 
+function scrollIntoView(element){
+    let Y = element.getBoundingClientRect().y;
+    window.scrollTo({
+        top: Y,
+        left: 0,
+        behavior: 'smooth'
+      });
+}
 
 const showMainContainerDiv = (e)=>{
     mainContainerDivs.forEach(el =>{
@@ -50,9 +63,9 @@ function showClickedPhoto(e){
 function showClickedVideo(e){
     modal.classList.remove('display-none');
     insideModal.innerHTML = e.target.dataset.link;
+    //making sure both vimeo and youtube videos are centered in the modal
     if(modalDisplay.firstElementChild.childNodes.length === 0){
          modalDisplay.style.display = "flex";
-         console.log(modalDisplay.firstElementChild.childNodes.length)
         }
 
 }
