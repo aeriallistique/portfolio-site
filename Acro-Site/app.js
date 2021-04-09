@@ -25,7 +25,7 @@ function handleNavLinks(e){
     if(target === 'second'){mainContainerDivs[1].classList.remove('display-none')}
     if(target === 'third'){mainContainerDivs[2].classList.remove('display-none')}
     if(target === 'fourth'){mainContainerDivs[3].classList.remove('display-none')}
-    if(target === 'fifth'){}
+    if(target === 'fifth'){return}
 
 }
 
