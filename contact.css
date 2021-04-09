@@ -91,7 +91,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    min-height: 92vh;
     height: auto;
 }
 .about{
@@ -164,6 +164,7 @@ body{
 @media only screen and (max-width: 780px){
     .main{
         margin-top: 9vmax;
+        min-height: 88vh;
     }
     .about{
         margin-left: 2rem;
