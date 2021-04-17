@@ -82,7 +82,7 @@ body{
 .main{
     margin: 8rem auto 5rem auto;
     width: 95%;
-    min-height:calc(100vh - 6vw) ;
+    min-height:calc(100vh - 10vw) ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
