@@ -3,6 +3,16 @@ body{
     padding: 0;
     background-color: lightblue;
 }
+.back-link{
+    margin: 1rem;
+}
+.back-link a{
+    text-decoration: none;
+}
+.back-link:hover a{
+    color: black;
+    font-weight: 600;
+}
 
 .scene{
     height: 900px;
