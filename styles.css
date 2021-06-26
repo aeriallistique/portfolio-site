@@ -126,6 +126,15 @@ body{
     display: inline-block;
     text-decoration: underline;
 }
+.github{
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.github:hover{
+    color:rgb(32, 32, 148);
+    transform: scale(1.2);
+}
 
 /* ................FOOTER   section..........  */
 .footer{
