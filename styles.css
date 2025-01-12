@@ -1,28 +1,32 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-transform: uppercase;
     text-decoration: none;
     color: black;
 }
-li{list-style-type:none;}
 
-body{
+li {
+    list-style-type: none;
+}
+
+body {
     font-family: 'Roboto Slab', serif;
     background: #f6f6f6;
 }
 
-.page-container{
+.page-container {
     position: relative;
     min-height: 10vh;
 }
 
 /* ....................header section..........  */
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -36,27 +40,31 @@ body{
     align-items: center;
 
 }
-.title{
+
+.title {
     margin-left: 2rem;
     font-size: 1.3rem;
     font-weight: lighter;
 }
-.title span{
+
+.title span {
     font-weight: 500;
 }
 
-.ul{
+.ul {
     width: 500px;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.ul a{
+
+.ul a {
     font-size: 1.3rem;
     position: relative;
 }
-.ul a::after{
+
+.ul a::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -67,23 +75,26 @@ body{
     transition: all .2s ease-in-out 0s;
     visibility: hidden;
     transform: scaleX(0);
-    
+
 }
-.ul a:hover:after{
+
+.ul a:hover:after {
     visibility: visible;
     transform: scaleX(1);
 }
-.ul a:focus::after{
+
+.ul a:focus::after {
     visibility: visible;
     transform: scaleX(1);
 }
-.about_link::after{
+
+.about_link::after {
     visibility: visible !important;
     transform: scaleX(1) !important;
 }
 
 /* ..........Main   section..........  */
-.main{
+.main {
     margin-top: 6vw;
     padding: 0, 1rem, 2.5rem, 1rem;
     display: flex;
@@ -91,60 +102,69 @@ body{
     align-items: center;
     height: auto;
 }
-.about{
+
+.about {
     width: 40%;
     height: 100%;
     margin: 0 auto;
 }
-.about h3{
+
+.about h3 {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 30px;
 }
-.about p{
+
+.about p {
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     width: 100%;
     line-height: 1.8rem;
 
 }
-.about p:first-of-type{
+
+.about p:first-of-type {
     margin-top: 2rem;
 }
-.about p:last-of-type{
+
+.about p:last-of-type {
     margin-bottom: 6rem;
 }
 
 
-.title-anchor{
+.title-anchor {
     text-transform: lowercase;
     font-family: 'Roboto Slab', serif;
-    color: rgb(14, 14, 133);
+    color: rgb(71, 71, 213);
 
 }
-.title-anchor:hover{
+
+.title-anchor:hover {
     display: inline-block;
     text-decoration: underline;
 }
-.github{
+
+.github {
     margin-left: 1rem;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
-.github:hover{
-    color:rgb(32, 32, 148);
+
+.github:hover {
+    color: rgb(32, 32, 148);
     transform: scale(1.2);
 }
 
 /* ................FOOTER   section..........  */
-.footer{
+.footer {
     height: 2.5rem;
     width: 100%;
-    padding:.4rem;
+    padding: .4rem;
     background-color: white;
     display: inline-block;
 }
-.footer p{
+
+.footer p {
     text-align: left;
     font-size: .8rem;
     color: gray;
@@ -157,109 +177,126 @@ body{
 
 /* ................MEDIA QUERIES  section..........  */
 
-@media only screen and (max-width: 1100px){
-    .about h3{
+@media only screen and (max-width: 1100px) {
+    .about h3 {
         font-size: 1.5rem;
     }
 }
 
-@media only screen and (max-width: 950px){
-    body{
+@media only screen and (max-width: 950px) {
+    body {
         height: 90vh;
     }
-    
-    .main{
+
+    .main {
         flex-direction: column;
     }
-    .about{
+
+    .about {
         width: 90%;
     }
-    .where_i_share{
+
+    .where_i_share {
         margin-bottom: 2rem;
-        
+
     }
-    .footer p{
+
+    .footer p {
         justify-content: flex-start;
         margin-left: 2rem;
     }
 }
 
-@media only screen and (max-width: 780px){
-    body{
+@media only screen and (max-width: 780px) {
+    body {
         height: 100vh;
     }
-    .main{
+
+    .main {
         margin-top: 9vmax;
     }
-    
-    .header{
+
+    .header {
         height: auto;
         flex-direction: column;
         align-items: flex-start;
     }
-    .ul, .title{
+
+    .ul,
+    .title {
         margin-top: 1rem;
     }
-    .title{
+
+    .title {
         margin-left: 1rem;
     }
-    .ul{
+
+    .ul {
         height: auto;
         width: 100%;
         flex-wrap: wrap;
         justify-content: flex-start;
         margin-bottom: 1rem;
     }
-    .ul li{
-           padding: 0 1rem;
+
+    .ul li {
+        padding: 0 1rem;
     }
 }
 
-@media only screen and (max-width: 500px){
-    body{
+@media only screen and (max-width: 500px) {
+    body {
         height: 130vh;
     }
-    .main{
+
+    .main {
         margin-top: 10vmax;
     }
-    footer{padding-bottom: .5rem;
+
+    footer {
+        padding-bottom: .5rem;
     }
-    
+
 }
 
-@media only screen and (max-width: 375px){
-    body{
+@media only screen and (max-width: 375px) {
+    body {
         height: 150vh;
     }
-    
-    .main{
+
+    .main {
         margin-top: 11vmax;
     }
-    .about{
+
+    .about {
         text-align: center;
     }
-    footer p{
+
+    footer p {
         margin-left: 1rem;
         padding-bottom: .5rem;
     }
 }
+
 /* ................MEDIA QUERIES FOR MOBILE....................  */
 
-@media (hover: none) and (pointer: coarse){
-    .about h3{
+@media (hover: none) and (pointer: coarse) {
+    .about h3 {
         margin-top: 2rem;
     }
-    footer{
+
+    footer {
         height: 4rem;
         border: 1px solid blu;
     }
-    footer p{
+
+    footer p {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
         text-align: center;
-        margin-left: 1rem!important;
+        margin-left: 1rem !important;
     }
 }
 
