@@ -1,9 +1,7 @@
-const APIKEY = '04c35731a5ee918f014970082a0088b1';
-const api_url = 'https://api.themoviedb.org/3/';
 
-const imgURL = 'https://image.tmdb.org/t/p/w300';
-const apiurl = 'https://api.themoviedb.org/3';
-const imgURL500 = 'https://image.tmdb.org/t/p/w500';
+// const imgURL = 'https://image.tmdb.org/t/p/w300';
+// const apiurl = 'https://api.themoviedb.org/3';
+// const imgURL500 = 'https://image.tmdb.org/t/p/w500';
 
 const wrapper = document.getElementById('wrapper');
 const form = document.getElementById('form');
@@ -57,7 +55,8 @@ wrapper.addEventListener('click', (e) => {
 });
 
 const getSingleMovie = async (id) => {
-    const resp = await fetch(`${api_url}movie/${id}?api_key=${APIKEY}&append_to_response=videos,images`);
+    const resp = await fetch(`https://freetestapi.com/api/v1/movies${id}`);
+
     const res = await resp.json();
     const results = res.results;
     const image = res.backdrop_path;
@@ -150,12 +149,12 @@ const closeModal = () => {
     overlay.classList.add('hide');
 };
 
-const getMovie = async (term, page) => {
+const getMovie = async (term) => {
 
     if (term) {
-        const resp = await fetch(`${api_url}search/movie?api_key=${APIKEY}&query=${term}&page=${page}`);
+        const resp = await fetch(`https://freetestapi.com/api/v1/movies${term}`);
         const res = await resp.json();
-        //console.log(res);
+        console.log(res);
         const results = res.results;
         renderMovies(results);
 
@@ -170,7 +169,7 @@ const getMovie = async (term, page) => {
 
 };
 
-getMovie();
+// getMovie();
 
 const chooseColor = (vote) => {
     if (vote >= 7) {
